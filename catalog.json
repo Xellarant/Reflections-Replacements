@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "entries": [
     {
       "id": "dmg24-walloping-ammunition",
@@ -867,10 +867,83 @@
           "reason": "User-authorized local correction: Stoneheart is unresolved KibblesTasty homebrew and declares no custom Erupting Earth spell. Use Xanathar's Guide to Everything (ID_XGTE_SPELL_ERUPTING_EARTH) as the assumed first-party reference. Preserve the distinct Princes of the Apocalypse definition. Pending confirmation with KibblesTasty; this is not an upstream-accepted correction."
         }
       ]
+    },
+    {
+      "id": "mordenkainens-tome-rarity-typos",
+      "revision": "1.0.0",
+      "title": "Mordenkainen's Tome rarity typos",
+      "summary": "Correct the rarities Vert Rare (Crown of Leadership) and Lgendary (Rattle of Death) to Very Rare and Legendary.",
+      "rationale": "The source misspells two item rarities, so each shows up as a rarity filter of its own. Each is one letter away from the rarity it plainly means. Only the fingerprint-matched declarations change, and nothing else in the file.",
+      "requires": [],
+      "variants": [
+        {
+          "sourcePath": "third-party/dms-guild/mordenkainens-tome-of-marvelous-magic.xml",
+          "sourceSha256": "F34B1D47B26FCAA2A4F882964F41FA224C25914736973C2ECD001FC202792816",
+          "payloadSha256": "94E309965DAA1B2A104CA043FF4D49C77F3D87A4FF9FCB9B5FC8C4E8E3208C28",
+          "upstreamUrl": "https://raw.githubusercontent.com/aurorabuilder/elements/master/third-party/dms-guild/mordenkainens-tome-of-marvelous-magic.xml",
+          "correctionKeys": [
+            "rarity-repair-ID_DMSG_MTMM_MAGIC_ITEM_CROWN_OF_LEADERSHIP",
+            "rarity-repair-ID_DMSG_MTMM_MAGIC_ITEM_RATTLE_OF_DEATH"
+          ]
+        }
+      ],
+      "corrections": [
+        {
+          "key": "rarity-repair-ID_DMSG_MTMM_MAGIC_ITEM_CROWN_OF_LEADERSHIP",
+          "operation": "replace",
+          "targetId": "ID_DMSG_MTMM_MAGIC_ITEM_CROWN_OF_LEADERSHIP",
+          "replacementId": null,
+          "originalFingerprint": "434E73BA2F6F91ACA8DA592FA09565C9462B416E8B0C30157E850DDD0C29E025",
+          "state": "review-pending",
+          "group": null,
+          "reason": "2026-10-06 user-authorized local repair, written from the Content Doctor. Rarity \"Vert Rare\" is a typo of \"Very Rare\" (Crown of Leadership). Not accepted upstream."
+        },
+        {
+          "key": "rarity-repair-ID_DMSG_MTMM_MAGIC_ITEM_RATTLE_OF_DEATH",
+          "operation": "replace",
+          "targetId": "ID_DMSG_MTMM_MAGIC_ITEM_RATTLE_OF_DEATH",
+          "replacementId": null,
+          "originalFingerprint": "50E3FE25D88B30C8C3E4E2E037595EC65F23B47614E5305FFCD0F850C028C955",
+          "state": "review-pending",
+          "group": null,
+          "reason": "2026-10-06 user-authorized local repair, written from the Content Doctor. Rarity \"Lgendary\" is a typo of \"Legendary\" (Rattle of Death). Not accepted upstream."
+        }
+      ]
+    },
+    {
+      "id": "lost-vaults-bestial-armor-rarity",
+      "revision": "1.0.0",
+      "title": "Bestial Armor rarity typo",
+      "summary": "Correct the rarity unommon (Bestial Armor) to Uncommon.",
+      "rationale": "The source misspells this item rarity, so it shows up as a rarity filter of its own. It is one letter away from the rarity it plainly means. Only the fingerprint-matched declaration changes.",
+      "requires": [],
+      "variants": [
+        {
+          "sourcePath": "reddit/reddit-unearthed-arcana/lost-vaults/magic-armors.xml",
+          "sourceSha256": "4C0248A05347FC054FA060555A86FEF59D653C759D35D2A02FE57D16307EA050",
+          "payloadSha256": "75204D48A1B8882E15B69E6D1AA8C2AB044B25C6EF53EE6FC4F66CE6A7C882C9",
+          "upstreamUrl": "https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/lost-vaults/magic-armors.xml",
+          "correctionKeys": [
+            "rarity-repair-ID_RDDT_LV_MAGIC_ITEM_ARMOR_BESTIAL"
+          ]
+        }
+      ],
+      "corrections": [
+        {
+          "key": "rarity-repair-ID_RDDT_LV_MAGIC_ITEM_ARMOR_BESTIAL",
+          "operation": "replace",
+          "targetId": "ID_RDDT_LV_MAGIC_ITEM_ARMOR_BESTIAL",
+          "replacementId": null,
+          "originalFingerprint": "29786B9F24A128400502818CA261D5CA0D05688DA61BF0F9B781E14F970879CE",
+          "state": "review-pending",
+          "group": null,
+          "reason": "2026-10-06 user-authorized local repair, written from the Content Doctor. Rarity \"unommon\" is a typo of \"Uncommon\" (Bestial Armor). Not accepted upstream."
+        }
+      ]
     }
   ],
   "importedFrom": {
-    "bundleVersion": "2026.10.06",
+    "bundleVersion": "2026.10.06.1",
     "contentLibrary": "0.10.1"
   }
 }

@@ -3,7 +3,7 @@
   <info>
     <name>Reflections Replacements</name>
     <description>Reviewed correction proposals; downloading never applies them.</description>
-    <update version="1.0.0">
+    <update version="1.1.0">
       <file name="reflections-replacements.index" url="https://raw.githubusercontent.com/Xellarant/Reflections-Replacements/master/reflections-replacements.index" />
     </update>
   </info>
@@ -19,5 +19,7 @@
     <file name="race-imperial.aurora-correction" url="https://raw.githubusercontent.com/Xellarant/Reflections-Replacements/master/reflections-replacements/race-imperial.aurora-correction" />
     <file name="wizard-demonbinder.aurora-correction" url="https://raw.githubusercontent.com/Xellarant/Reflections-Replacements/master/reflections-replacements/wizard-demonbinder.aurora-correction" />
     <file name="sorcerer-stoneheart.aurora-correction" url="https://raw.githubusercontent.com/Xellarant/Reflections-Replacements/master/reflections-replacements/sorcerer-stoneheart.aurora-correction" />
+    <file name="mordenkainens-tome-rarity-typos.aurora-correction" url="https://raw.githubusercontent.com/Xellarant/Reflections-Replacements/master/reflections-replacements/mordenkainens-tome-rarity-typos.aurora-correction" />
+    <file name="lost-vaults-bestial-armor-rarity.aurora-correction" url="https://raw.githubusercontent.com/Xellarant/Reflections-Replacements/master/reflections-replacements/lost-vaults-bestial-armor-rarity.aurora-correction" />
   </files>
 </index>

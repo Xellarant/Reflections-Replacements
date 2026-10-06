@@ -16,11 +16,11 @@ This feed requires a Reflections build with replacement-proposal support. Adding
 
 Applied or dismissed proposal revisions are remembered locally. A new proposal revision can be reviewed separately. Applying a proposal is **local acceptance**, not a claim that the upstream author has accepted the repair; the embedded correction records deliberately remain `review-pending`.
 
-The exact source hash limits each proposal to the reviewed source version. A matching filename with changed contents does not automatically qualify. The initial catalog includes direct and `aurora-sources` aggregate layouts; the Tatsumi correction has only the reviewed direct-layout variant.
+The exact source hash limits each proposal to the reviewed source version. A matching filename with changed contents does not automatically qualify. The initial catalog includes direct and `aurora-sources` aggregate layouts; the Tatsumi correction and the two rarity corrections have only the reviewed direct-layout variant.
 
 ## Included corrections
 
-The initial catalog contains **11 proposals, 21 source-layout variants, and 46 correction records**. These include the ten broken grant/extraction references, duplicate item and feature identities, blank Devout feature grants, and invalid equipment-pack price placeholders.
+The catalog contains **13 proposals, 23 source-layout variants, and 49 correction records**. These include the ten broken grant/extraction references, duplicate item and feature identities, blank Devout feature grants, invalid equipment-pack price placeholders, and three item rarities with a one-letter typo.
 
 | Proposal | Correction |
 | --- | --- |
@@ -35,6 +35,8 @@ The initial catalog contains **11 proposals, 21 source-layout variants, and 46 c
 | Imperial | Repair the Poison Spray publisher prefix. |
 | Demonbinder | Repair both demon-summoning spell IDs. |
 | Stoneheart | Use the Xanathar's Erupting Earth definition. |
+| Mordenkainen's Tome rarities | Read "Vert Rare" as Very Rare (Crown of Leadership) and "Lgendary" as Legendary (Rattle of Death). |
+| Bestial Armor | Read "unommon" as Uncommon. |
 
 The retired Staff of Flowers correction and the optional Farmer background customization are excluded. Farmer's equipment pack is part of the general price-placeholder repair; that does not include the Farmer background customization.
 
