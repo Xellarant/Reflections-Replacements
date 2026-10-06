@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+  <info>
+    <name>Reflections Replacements</name>
+    <description>Reviewed correction proposals; downloading never applies them.</description>
+    <update version="1.0.0">
+      <file name="reflections-replacements.index" url="https://raw.githubusercontent.com/Xellarant/Reflections-Replacements/master/reflections-replacements.index" />
+    </update>
+  </info>
+  <files>
+    <file name="dmg24-walloping-ammunition.aurora-correction" url="https://raw.githubusercontent.com/Xellarant/Reflections-Replacements/master/reflections-replacements/dmg24-walloping-ammunition.aurora-correction" />
+    <file name="forgotten-secrets-items.aurora-correction" url="https://raw.githubusercontent.com/Xellarant/Reflections-Replacements/master/reflections-replacements/forgotten-secrets-items.aurora-correction" />
+    <file name="guns.aurora-correction" url="https://raw.githubusercontent.com/Xellarant/Reflections-Replacements/master/reflections-replacements/guns.aurora-correction" />
+    <file name="fighter-devout.aurora-correction" url="https://raw.githubusercontent.com/Xellarant/Reflections-Replacements/master/reflections-replacements/fighter-devout.aurora-correction" />
+    <file name="race-tatsumi.aurora-correction" url="https://raw.githubusercontent.com/Xellarant/Reflections-Replacements/master/reflections-replacements/race-tatsumi.aurora-correction" />
+    <file name="players-handbook-2024-items-packs.aurora-correction" url="https://raw.githubusercontent.com/Xellarant/Reflections-Replacements/master/reflections-replacements/players-handbook-2024-items-packs.aurora-correction" />
+    <file name="class-spiritualist.aurora-correction" url="https://raw.githubusercontent.com/Xellarant/Reflections-Replacements/master/reflections-replacements/class-spiritualist.aurora-correction" />
+    <file name="psionic-disciplines.aurora-correction" url="https://raw.githubusercontent.com/Xellarant/Reflections-Replacements/master/reflections-replacements/psionic-disciplines.aurora-correction" />
+    <file name="race-imperial.aurora-correction" url="https://raw.githubusercontent.com/Xellarant/Reflections-Replacements/master/reflections-replacements/race-imperial.aurora-correction" />
+    <file name="wizard-demonbinder.aurora-correction" url="https://raw.githubusercontent.com/Xellarant/Reflections-Replacements/master/reflections-replacements/wizard-demonbinder.aurora-correction" />
+    <file name="sorcerer-stoneheart.aurora-correction" url="https://raw.githubusercontent.com/Xellarant/Reflections-Replacements/master/reflections-replacements/sorcerer-stoneheart.aurora-correction" />
+  </files>
+</index>

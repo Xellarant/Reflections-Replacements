@@ -1,0 +1,2590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements xmlns:rr="urn:aurora-reflections:replacements:1">
+  <info>
+    <name>Arcane Artillery musketball duplicate</name>
+    <description>Remove the duplicate Musketball (20) declaration while retaining the individual musketball.</description>
+    <update version="1.0.0">
+      <file name="guns.aurora-correction" url="https://raw.githubusercontent.com/Xellarant/Reflections-Replacements/master/reflections-replacements/guns.aurora-correction" />
+    </update>
+  </info>
+  <rr:proposal schema-version="1" id="guns" revision="1.0.0">
+    <rr:title>Arcane Artillery musketball duplicate</rr:title>
+    <rr:summary>Remove the duplicate Musketball (20) declaration while retaining the individual musketball.</rr:summary>
+    <rr:variant source-path="reddit/reddit-unearthed-arcana/arcane-artillery/guns.xml" source-sha256="412728DB3A783F20A6A0A1ED30CBB9C04DCA4120B0E97ECC381B50CBFADA269C">
+      <rr:payload sha256="E9138E40A2AC116B87F636D2C042D2629AF7D28A8CF19C3CD81BFFBF48B7CF7D">
+&lt;elements&gt;
+	&lt;info&gt;
+		&lt;name&gt;Guns&lt;/name&gt;
+		&lt;update version="0.0.1"&gt;
+			&lt;file name="guns.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/arcane-artillery/guns.xml" /&gt;
+		&lt;/update&gt;
+	&lt;/info&gt;
+
+	&lt;element name="Flintlock Pistol" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_FLINTLOCK_PISTOL"&gt;
+		&lt;supports&gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_SIDEARMS, ID_RDDT_AA_WEAPON_GROUP_FLINTLOCKPISTOLS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 30/90), Loading, Light, Misfire 3&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;250&lt;/set&gt;
+			&lt;set name="weight" lb="3"&gt;3 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;onehand&lt;/set&gt;
+			&lt;set name="range"&gt;30/90&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d6&lt;/set&gt;
+			&lt;set name="misfire"&gt;3&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_FLINTLOCKPISTOLS&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Dragoon" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_DRAGOON"&gt;
+		&lt;supports&gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_SCATTER, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_SIDEARMS, ID_RDDT_AA_WEAPON_GROUP_DRAGOONS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 10/30), Loading, Scatter (1d4), Misfire 3&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;300&lt;/set&gt;
+			&lt;set name="weight" lb="4"&gt;4 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;onehand&lt;/set&gt;
+			&lt;set name="range"&gt;10/30&lt;/set&gt;
+			&lt;set name="damage"&gt;1d8 bludgeoning&lt;/set&gt;
+			&lt;set name="misfire"&gt;3&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_DRAGOONS&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Pepperbox" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_PEPPERBOX"&gt;
+		&lt;supports&gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_RELOAD, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_SIDEARMS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 40/120), Reload 4, Shell Loading, Misfire 1&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;800&lt;/set&gt;
+			&lt;set name="weight" lb="4"&gt;4 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;onehand&lt;/set&gt;
+			&lt;set name="range"&gt;40/120&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d8&lt;/set&gt;
+			&lt;set name="misfire"&gt;1&lt;/set&gt;
+			&lt;set name="reload"&gt;4&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_PEPPERBOX&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Musket" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_MUSKET"&gt;
+		&lt;supports&gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_MUSKETS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 70/200), Two-Handed, Loading, Misfire 2&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;500&lt;/set&gt;
+			&lt;set name="weight" lb="10"&gt;10 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;70/200&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d12&lt;/set&gt;
+			&lt;set name="misfire"&gt;2&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_MUSKET&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Arquebus" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_ARQUEBUS"&gt;
+		&lt;supports&gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 60/150), Two-Handed, Loading, Heavy, Misfire 4&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;200&lt;/set&gt;
+			&lt;set name="weight" lb="13"&gt;13 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;60/150&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;3d4&lt;/set&gt;
+			&lt;set name="misfire"&gt;4&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_ARQUEBUS&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Blunderbuss" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_BLUNDERBUSS"&gt;
+		&lt;supports&gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_RDDT_AA_WEAPON_PROPERTY_SCATTER, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 15/45), Two-Handed, Loading, Scatter (1d6), Misfire 3&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;900&lt;/set&gt;
+			&lt;set name="weight" lb="7"&gt;7 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;15/45&lt;/set&gt;
+			&lt;set name="damage"&gt;1d12 bludgeoning&lt;/set&gt;
+			&lt;set name="misfire"&gt;3&lt;/set&gt;
+			&lt;set name="scatter"&gt;1d6&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_BLUNDERBUSS&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Wheellock Gun" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_WHEELLOCKGUN"&gt;
+		&lt;supports&gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_WHEELLOCKGUNS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 50/160), Two-Handed, Loading, Misfire 2&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;400&lt;/set&gt;
+			&lt;set name="weight" lb="5"&gt;5 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;50/160&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d10&lt;/set&gt;
+			&lt;set name="misfire"&gt;2&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_WHEELLOCKGUNS&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Pistol" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_PISTOL"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS, ID_RDDT_AA_WEAPON_GROUP_PISTOLS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 40/120), Reload 8, Light&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;1000&lt;/set&gt;
+			&lt;set name="weight" lb="2"&gt;2 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;onehand&lt;/set&gt;
+			&lt;set name="range"&gt;40/120&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d6&lt;/set&gt;
+			&lt;set name="reload"&gt;8&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_PISTOLS&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Heavy Pistol" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_HEAVYPISTOL"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS, ID_RDDT_AA_WEAPON_GROUP_PISTOLS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 40/140), Reload 8&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;1150&lt;/set&gt;
+			&lt;set name="weight" lb="3"&gt;3 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;onehand&lt;/set&gt;
+			&lt;set name="range"&gt;40/120&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d8&lt;/set&gt;
+			&lt;set name="reload"&gt;8&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_HEAVY_PISTOL&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Sawn-Off Shotgun" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_SAWNOFF"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS,ID_RDDT_AA_WEAPON_PROPERTY_SCATTER, ID_RDDT_AA_WEAPON_GROUP_SAWNOFFSHOTGUNS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 20/40), Reload 4, Scatter (1d4)&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;1200&lt;/set&gt;
+			&lt;set name="weight" lb="4"&gt;4 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;onehand&lt;/set&gt;
+			&lt;set name="range"&gt;20/40&lt;/set&gt;
+			&lt;set name="damage"&gt;2d4 bludgeoning&lt;/set&gt;
+			&lt;set name="reload"&gt;4&lt;/set&gt;
+			&lt;set name="scatter"&gt;1d4&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_SAWNOFFSHOTGUNS&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Rifle" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_RIFLE"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_RIFLES, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 90/300), Two-Handed, Reload 6&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;1500&lt;/set&gt;
+			&lt;set name="weight" lb="10"&gt;10 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;90/300&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d12&lt;/set&gt;
+			&lt;set name="reload"&gt;6&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_RIFLES&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Carbine" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_CARBINE"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_CARBINES, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 60/200), Two-Handed, Reload 8&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;1350&lt;/set&gt;
+			&lt;set name="weight" lb="6"&gt;6 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;60/200&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d10&lt;/set&gt;
+			&lt;set name="reload"&gt;6&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_CARBINES&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Shotgun" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_SHOTGUN"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_BLUDGEONING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_RDDT_AA_WEAPON_PROPERTY_SCATTER, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 30/60), Two-Handed, Scatter (1d6), Reload 6&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;2000&lt;/set&gt;
+			&lt;set name="weight" lb="7"&gt;7 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;30/60&lt;/set&gt;
+			&lt;set name="damage"&gt;1d12 bludgeoning&lt;/set&gt;
+			&lt;set name="reload"&gt;6&lt;/set&gt;
+			&lt;set name="scatter"&gt;1d6&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_SHOTGUNS&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+
+	&lt;element name="Heavy Rifle" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_HEAVYRIFLE"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 200/1000), Two-Handed, Loading, Heavy&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;2900&lt;/set&gt;
+			&lt;set name="weight" lb="18"&gt;18 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;200/1000&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;3d8&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_HEAVY_RIFLE&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	
+	&lt;element name="Repeating Crossbow" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_REPEATING_CROSSBOW"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_RDDT_AA_WEAPON_GROUP_CROSSBOWS 
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 100/400), Heavy, Two-Handed, Reload 6&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;100&lt;/set&gt;
+			&lt;set name="weight" lb="18"&gt;18 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;100/400&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d10&lt;/set&gt;
+			&lt;set name="reload"&gt;6&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Automatic Crossbow" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_AUTOMATIC_CROSSBOW"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_RDDT_AA_WEAPON_PROPERTY_AUTOMATIC,ID_RDDT_AA_WEAPON_GROUP_CROSSBOWS 
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 100/400), Heavy, Two-Handed, Automatic (1d10), Reload 20&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;200&lt;/set&gt;
+			&lt;set name="weight" lb="20"&gt;20 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;100/400&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d8&lt;/set&gt;
+			&lt;set name="reload"&gt;20&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Reloading Hand Crossbow" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_RELOADING_HAND_CROSSBOW"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_RDDT_AA_WEAPON_GROUP_CROSSBOWS 
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 30/120), Light, Reload 4&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;350&lt;/set&gt;
+			&lt;set name="weight" lb="3"&gt;3 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;onehand&lt;/set&gt;
+			&lt;set name="range"&gt;30/120&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d6&lt;/set&gt;
+			&lt;set name="reload"&gt;4&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Splinterfire Crossbow" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_SPLINTERFIRE_CROSSBOW"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_INTERNAL_WEAPON_PROPERTY_SCATTER,ID_RDDT_AA_WEAPON_GROUP_CROSSBOWS 
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 30/60), Heavy, Two-Handed, Scatter (1d6), Reload 6&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;400&lt;/set&gt;
+			&lt;set name="weight" lb="21"&gt;21 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;30/60&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d12&lt;/set&gt;
+			&lt;set name="reload"&gt;6&lt;/set&gt;
+			&lt;set name="scatter"&gt;1d6&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Automatic Pistol" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_AUTOMATIC_PISTOL"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS, ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_RDDT_AA_WEAPON_PROPERTY_AUTOMATIC, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 40/120), Light, Reload 24, Automatic (6d4)&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;2100&lt;/set&gt;
+			&lt;set name="weight" lb="3"&gt;3 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;onehand&lt;/set&gt;
+			&lt;set name="range"&gt;40/120&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;2d4&lt;/set&gt;
+			&lt;set name="reload"&gt;24&lt;/set&gt;
+			&lt;set name="automatic"&gt;6d4&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_AUTO_PISTOL&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Burst Pistol" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_BURST_PISTOL"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS, ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_RDDT_AA_WEAPON_PROPERTY_BURSTFIRE, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 30/90), Light, Reload 24, Burst Fire (3d8)&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;2100&lt;/set&gt;
+			&lt;set name="weight" lb="3"&gt;3 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;onehand&lt;/set&gt;
+			&lt;set name="range"&gt;30/90&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d8&lt;/set&gt;
+			&lt;set name="reload"&gt;24&lt;/set&gt;
+			&lt;set name="burst"&gt;3d8&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_BURST_PISTOL&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Revolver" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_REVOLVER"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 50/180), Light, Reload 6&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;2200&lt;/set&gt;
+			&lt;set name="weight" lb="3"&gt;3 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;onehand&lt;/set&gt;
+			&lt;set name="range"&gt;50/180&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d8&lt;/set&gt;
+			&lt;set name="reload"&gt;6&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_REVOLVER&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Hand Cannon" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_HAND_CANNON"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 60/200), Reload 6&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;2700&lt;/set&gt;
+			&lt;set name="weight" lb="4"&gt;4 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;onehand&lt;/set&gt;
+			&lt;set name="range"&gt;60/200&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d10&lt;/set&gt;
+			&lt;set name="reload"&gt;6&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_HAND_CANNON&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	
+	&lt;element name="Automatic Rifle" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_AUTOMATIC_RIFLE"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_RDDT_AA_WEAPON_PROPERTY_AUTOMATIC,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 90/300), Two-Handed, Reload 30, Automatic (6d6)&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;3500&lt;/set&gt;
+			&lt;set name="weight" lb="8"&gt;8 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;90/300&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;2d6&lt;/set&gt;
+			&lt;set name="reload"&gt;30&lt;/set&gt;
+			&lt;set name="automatic"&gt;6d6&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_AUTOMATIC_RIFLE&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Burst Rifle" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_BURST_RIFLE"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_RDDT_AA_WEAPON_PROPERTY_BURSTFIRE, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 90/300), Two-Handed, Reload 24, Burst Fire (3d12)&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;3500&lt;/set&gt;
+			&lt;set name="weight" lb="8"&gt;8 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;90/300&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d12&lt;/set&gt;
+			&lt;set name="reload"&gt;24&lt;/set&gt;
+			&lt;set name="burst"&gt;3d12&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_BURST_RIFLE&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Double Barrel Shotgun" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_DOUBLE_BARREL_SHOTGUN"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_BLUDGEONING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_LOADING,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_SCATTER, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 90/300), Two-Handed, Scatter (1d8), Loading, Special&lt;/p&gt;
+			&lt;h5&gt;Double Barrel Shotgun Special Rules&lt;/h5&gt;
+			&lt;p&gt;Double Barrel shotguns can be fired twice per attack. When you make an attack roll with a double barrel shotgun, you can make two attack rolls at the same creature. The second attack roll is made with disadvantage, and on a hit, you do not add your ability score modifier to the damage of that attack, unless your modifier is negative.&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;2400&lt;/set&gt;
+			&lt;set name="weight" lb="11"&gt;11 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;90/300&lt;/set&gt;
+			&lt;set name="damage"&gt;4d10 bludgeoning&lt;/set&gt;
+			&lt;set name="scatter"&gt;1d8&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLE_BARREL_SHOTGUN&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Anti-Material Rifle" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_ANTIMATERIAL_RIFLE"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_LOADING,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 300/1800), Two-Handed, Loading, Heavy &lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;4500&lt;/set&gt;
+			&lt;set name="weight" lb="18"&gt;18 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;300/1800&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;3d12&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_ANTI_MATERIAL_RIFLE&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Shoulder Cannon" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_SHOULDER_CANNON"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_BLUDGEONING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_LOADING,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 60/200), Two-Handed, Loading, Bulky, Special&lt;/p&gt;
+			&lt;h5&gt;Shoulder Cannon Special Rules&lt;/h5&gt;
+			&lt;p&gt;You can make a special attack with a Shoulder Cannon that targets any creature within a 5 wide foot line out to its maximum  range. Any target in the path of this special attack must succeed a DC (8 + your Dexterity modifier + your proficiency bonus)  Strength saving throw or take it's damage roll and be knocked prone. They take half damage on a success and are not knocked  prone. Shoulder Cannons are considered siege weapons for the purposes of damage. Shoulder Cannons use a special type of  ammo known as a Mini-Cannonball, which weighs 2 lbs and costs 5gp per round.&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;3500&lt;/set&gt;
+			&lt;set name="weight" lb="30"&gt;30 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;60/200&lt;/set&gt;
+			&lt;set name="damage"&gt;4d10 bludgeoning&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_SHOULDER_CANNON&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Mini-Cannonball" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_MINICANNONBALL"&gt;
+		&lt;description&gt;
+			&lt;p&gt;Mini-Cannonballs are used with a Shoulder Cannon to make a ranged attack.&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Ammunition&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;5&lt;/set&gt;
+			&lt;set name="weight" lb="2"&gt;2 lb.&lt;/set&gt;
+			&lt;set name="type"&gt;Ammunition&lt;/set&gt;
+			&lt;set name="stackable"&gt;true&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Rifleblade" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_RIFLEBLADE"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 90/300), Two-Handed, Reload 6, Bayonet(1d6 Piercing/Slashing)&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;5000&lt;/set&gt;
+			&lt;set name="weight" lb="10"&gt;10 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;90/300&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d12&lt;/set&gt;
+			&lt;set name="reload"&gt;6&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_RIFLEBLADE&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Gunlance" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_GUNLANCE"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 70/230), Two-Handed, Reload 6, Bayonet(1d12 Piercing, Reach), Special&lt;/p&gt;
+			&lt;h5&gt;Gunlance Special Rules&lt;/h5&gt;
+			&lt;p&gt;You have disadvantage when you use the lance to attack a target within 5 feet of you. You can wield the lance one handed when mounted.&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;6000&lt;/set&gt;
+			&lt;set name="weight" lb="16"&gt;16 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;70/230&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;2d6&lt;/set&gt;
+			&lt;set name="reload"&gt;6&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Nock Gun" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_NOCK_GUN"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 70/210), Two-Handed, Loading, Special&lt;/p&gt;
+			&lt;h5&gt;Nock Gun Special Rules&lt;/h5&gt;
+			&lt;p&gt;You can use your action to fire all 7 barrels of this gun at once. Make an attack roll with disadvantage. If you succeed, roll 7d12 damage. This attack deals 7d4 bludgeoning damage to you and forces you to succeed a DC 10 Strength saving throw or be knocked prone.&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;5500&lt;/set&gt;
+			&lt;set name="weight" lb="20"&gt;20 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;70/210&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d12&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_NOCK_GUN&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	
+	
+	&lt;element name="Musketball" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_MUSKETBALL"&gt;
+		&lt;description&gt;
+			&lt;p&gt;Musketballs are used in primitive firearms without the scatter property.&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Ammunition&lt;/set&gt;
+			&lt;set name="cost" currency="sp"&gt;1&lt;/set&gt;
+			&lt;set name="weight" lb="0.05"&gt;1/20 lb.&lt;/set&gt;
+			&lt;set name="type"&gt;Ammunition&lt;/set&gt;
+			&lt;set name="stackable"&gt;true&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Spreadshot" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_SPREADSHOT"&gt;
+		&lt;description&gt;
+			&lt;p&gt;Spreadshot is used in blunderbusses.&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Ammunition&lt;/set&gt;
+			&lt;set name="cost" currency="sp"&gt;1&lt;/set&gt;
+			&lt;set name="weight" lb="0.05"&gt;1/20 lb.&lt;/set&gt;
+			&lt;set name="type"&gt;Ammunition&lt;/set&gt;
+			&lt;set name="stackable"&gt;true&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Cartridge" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_CARTRIDGE"&gt;
+		&lt;description&gt;
+			&lt;p&gt;Cartridges are used in advanced firearms without the scatter property.&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Ammunition&lt;/set&gt;
+			&lt;set name="cost" currency="sp"&gt;3&lt;/set&gt;
+			&lt;set name="weight" lb="0.1"&gt;1/10 lb.&lt;/set&gt;
+			&lt;set name="type"&gt;Ammunition&lt;/set&gt;
+			&lt;set name="stackable"&gt;true&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Buckshot" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_BUCKSHOT"&gt;
+		&lt;description&gt;
+			&lt;p&gt;Buckshot is used in shotguns.&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Ammunition&lt;/set&gt;
+			&lt;set name="cost" currency="sp"&gt;1&lt;/set&gt;
+			&lt;set name="weight" lb="0.1"&gt;1/10 lb.&lt;/set&gt;
+			&lt;set name="type"&gt;Ammunition&lt;/set&gt;
+			&lt;set name="stackable"&gt;true&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Slug" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_SLUG"&gt;
+		&lt;description&gt;
+			&lt;p&gt;Slugs are used in shotguns. Removes the scatter property - functions like cartridge rounds.&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Ammunition&lt;/set&gt;
+			&lt;set name="cost" currency="sp"&gt;3&lt;/set&gt;
+			&lt;set name="weight" lb="0.3"&gt;3/10 lb.&lt;/set&gt;
+			&lt;set name="type"&gt;Ammunition&lt;/set&gt;
+			&lt;set name="stackable"&gt;true&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+&lt;al:corrections xmlns:al="urn:aurora-lights:corrections:1" version="1" source-path="reddit/reddit-unearthed-arcana/arcane-artillery/guns.xml"&gt;&lt;al:baseline encoding="escaped-xml"&gt;&amp;lt;?xml version="1.0" encoding="utf-8" ?&amp;gt;
+&amp;lt;elements&amp;gt;
+	&amp;lt;info&amp;gt;
+		&amp;lt;name&amp;gt;Guns&amp;lt;/name&amp;gt;
+		&amp;lt;update version="0.0.1"&amp;gt;
+			&amp;lt;file name="guns.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/arcane-artillery/guns.xml" /&amp;gt;
+		&amp;lt;/update&amp;gt;
+	&amp;lt;/info&amp;gt;
+
+	&amp;lt;element name="Flintlock Pistol" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_FLINTLOCK_PISTOL"&amp;gt;
+		&amp;lt;supports&amp;gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_SIDEARMS, ID_RDDT_AA_WEAPON_GROUP_FLINTLOCKPISTOLS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 30/90), Loading, Light, Misfire 3&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;250&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="3"&amp;gt;3 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;onehand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;30/90&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="misfire"&amp;gt;3&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_FLINTLOCKPISTOLS&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Dragoon" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_DRAGOON"&amp;gt;
+		&amp;lt;supports&amp;gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_SCATTER, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_SIDEARMS, ID_RDDT_AA_WEAPON_GROUP_DRAGOONS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 10/30), Loading, Scatter (1d4), Misfire 3&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;300&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="4"&amp;gt;4 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;onehand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;10/30&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage"&amp;gt;1d8 bludgeoning&amp;lt;/set&amp;gt;
+			&amp;lt;set name="misfire"&amp;gt;3&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_DRAGOONS&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Pepperbox" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_PEPPERBOX"&amp;gt;
+		&amp;lt;supports&amp;gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_RELOAD, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_SIDEARMS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 40/120), Reload 4, Shell Loading, Misfire 1&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;800&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="4"&amp;gt;4 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;onehand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;40/120&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d8&amp;lt;/set&amp;gt;
+			&amp;lt;set name="misfire"&amp;gt;1&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;4&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_PEPPERBOX&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Musket" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_MUSKET"&amp;gt;
+		&amp;lt;supports&amp;gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_MUSKETS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 70/200), Two-Handed, Loading, Misfire 2&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;500&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="10"&amp;gt;10 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;70/200&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d12&amp;lt;/set&amp;gt;
+			&amp;lt;set name="misfire"&amp;gt;2&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_MUSKET&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Arquebus" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_ARQUEBUS"&amp;gt;
+		&amp;lt;supports&amp;gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 60/150), Two-Handed, Loading, Heavy, Misfire 4&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;200&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="13"&amp;gt;13 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;60/150&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;3d4&amp;lt;/set&amp;gt;
+			&amp;lt;set name="misfire"&amp;gt;4&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_ARQUEBUS&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Blunderbuss" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_BLUNDERBUSS"&amp;gt;
+		&amp;lt;supports&amp;gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_RDDT_AA_WEAPON_PROPERTY_SCATTER, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 15/45), Two-Handed, Loading, Scatter (1d6), Misfire 3&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;900&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="7"&amp;gt;7 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;15/45&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage"&amp;gt;1d12 bludgeoning&amp;lt;/set&amp;gt;
+			&amp;lt;set name="misfire"&amp;gt;3&amp;lt;/set&amp;gt;
+			&amp;lt;set name="scatter"&amp;gt;1d6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_BLUNDERBUSS&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Wheellock Gun" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_WHEELLOCKGUN"&amp;gt;
+		&amp;lt;supports&amp;gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_WHEELLOCKGUNS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 50/160), Two-Handed, Loading, Misfire 2&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;400&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="5"&amp;gt;5 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;50/160&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d10&amp;lt;/set&amp;gt;
+			&amp;lt;set name="misfire"&amp;gt;2&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_WHEELLOCKGUNS&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Pistol" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_PISTOL"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS, ID_RDDT_AA_WEAPON_GROUP_PISTOLS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 40/120), Reload 8, Light&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;1000&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="2"&amp;gt;2 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;onehand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;40/120&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;8&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_PISTOLS&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Heavy Pistol" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_HEAVYPISTOL"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS, ID_RDDT_AA_WEAPON_GROUP_PISTOLS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 40/140), Reload 8&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;1150&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="3"&amp;gt;3 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;onehand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;40/120&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d8&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;8&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_HEAVY_PISTOL&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Sawn-Off Shotgun" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_SAWNOFF"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS,ID_RDDT_AA_WEAPON_PROPERTY_SCATTER, ID_RDDT_AA_WEAPON_GROUP_SAWNOFFSHOTGUNS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 20/40), Reload 4, Scatter (1d4)&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;1200&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="4"&amp;gt;4 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;onehand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;20/40&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage"&amp;gt;2d4 bludgeoning&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;4&amp;lt;/set&amp;gt;
+			&amp;lt;set name="scatter"&amp;gt;1d4&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_SAWNOFFSHOTGUNS&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Rifle" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_RIFLE"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_RIFLES, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 90/300), Two-Handed, Reload 6&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;1500&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="10"&amp;gt;10 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;90/300&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d12&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_RIFLES&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Carbine" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_CARBINE"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_CARBINES, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 60/200), Two-Handed, Reload 8&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;1350&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="6"&amp;gt;6 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;60/200&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d10&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_CARBINES&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Shotgun" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_SHOTGUN"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_BLUDGEONING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_RDDT_AA_WEAPON_PROPERTY_SCATTER, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 30/60), Two-Handed, Scatter (1d6), Reload 6&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;2000&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="7"&amp;gt;7 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;30/60&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage"&amp;gt;1d12 bludgeoning&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="scatter"&amp;gt;1d6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_SHOTGUNS&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+
+	&amp;lt;element name="Heavy Rifle" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_HEAVYRIFLE"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 200/1000), Two-Handed, Loading, Heavy&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;2900&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="18"&amp;gt;18 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;200/1000&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;3d8&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_HEAVY_RIFLE&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	
+	&amp;lt;element name="Repeating Crossbow" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_REPEATING_CROSSBOW"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_RDDT_AA_WEAPON_GROUP_CROSSBOWS 
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 100/400), Heavy, Two-Handed, Reload 6&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;100&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="18"&amp;gt;18 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;100/400&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d10&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Automatic Crossbow" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_AUTOMATIC_CROSSBOW"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_RDDT_AA_WEAPON_PROPERTY_AUTOMATIC,ID_RDDT_AA_WEAPON_GROUP_CROSSBOWS 
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 100/400), Heavy, Two-Handed, Automatic (1d10), Reload 20&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;200&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="20"&amp;gt;20 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;100/400&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d8&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;20&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Reloading Hand Crossbow" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_RELOADING_HAND_CROSSBOW"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_RDDT_AA_WEAPON_GROUP_CROSSBOWS 
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 30/120), Light, Reload 4&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;350&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="3"&amp;gt;3 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;onehand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;30/120&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;4&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Splinterfire Crossbow" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_SPLINTERFIRE_CROSSBOW"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_INTERNAL_WEAPON_PROPERTY_SCATTER,ID_RDDT_AA_WEAPON_GROUP_CROSSBOWS 
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 30/60), Heavy, Two-Handed, Scatter (1d6), Reload 6&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;400&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="21"&amp;gt;21 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;30/60&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d12&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="scatter"&amp;gt;1d6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Automatic Pistol" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_AUTOMATIC_PISTOL"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS, ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_RDDT_AA_WEAPON_PROPERTY_AUTOMATIC, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 40/120), Light, Reload 24, Automatic (6d4)&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;2100&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="3"&amp;gt;3 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;onehand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;40/120&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;2d4&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;24&amp;lt;/set&amp;gt;
+			&amp;lt;set name="automatic"&amp;gt;6d4&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_AUTO_PISTOL&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Burst Pistol" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_BURST_PISTOL"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS, ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_RDDT_AA_WEAPON_PROPERTY_BURSTFIRE, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 30/90), Light, Reload 24, Burst Fire (3d8)&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;2100&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="3"&amp;gt;3 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;onehand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;30/90&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d8&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;24&amp;lt;/set&amp;gt;
+			&amp;lt;set name="burst"&amp;gt;3d8&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_BURST_PISTOL&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Revolver" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_REVOLVER"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 50/180), Light, Reload 6&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;2200&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="3"&amp;gt;3 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;onehand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;50/180&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d8&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_REVOLVER&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Hand Cannon" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_HAND_CANNON"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 60/200), Reload 6&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;2700&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="4"&amp;gt;4 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;onehand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;60/200&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d10&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_HAND_CANNON&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	
+	&amp;lt;element name="Automatic Rifle" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_AUTOMATIC_RIFLE"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_RDDT_AA_WEAPON_PROPERTY_AUTOMATIC,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 90/300), Two-Handed, Reload 30, Automatic (6d6)&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;3500&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="8"&amp;gt;8 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;90/300&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;2d6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;30&amp;lt;/set&amp;gt;
+			&amp;lt;set name="automatic"&amp;gt;6d6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_AUTOMATIC_RIFLE&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Burst Rifle" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_BURST_RIFLE"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_RDDT_AA_WEAPON_PROPERTY_BURSTFIRE, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 90/300), Two-Handed, Reload 24, Burst Fire (3d12)&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;3500&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="8"&amp;gt;8 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;90/300&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d12&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;24&amp;lt;/set&amp;gt;
+			&amp;lt;set name="burst"&amp;gt;3d12&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_BURST_RIFLE&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Double Barrel Shotgun" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_DOUBLE_BARREL_SHOTGUN"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_BLUDGEONING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_LOADING,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_SCATTER, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 90/300), Two-Handed, Scatter (1d8), Loading, Special&amp;lt;/p&amp;gt;
+			&amp;lt;h5&amp;gt;Double Barrel Shotgun Special Rules&amp;lt;/h5&amp;gt;
+			&amp;lt;p&amp;gt;Double Barrel shotguns can be fired twice per attack. When you make an attack roll with a double barrel shotgun, you can make two attack rolls at the same creature. The second attack roll is made with disadvantage, and on a hit, you do not add your ability score modifier to the damage of that attack, unless your modifier is negative.&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;2400&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="11"&amp;gt;11 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;90/300&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage"&amp;gt;4d10 bludgeoning&amp;lt;/set&amp;gt;
+			&amp;lt;set name="scatter"&amp;gt;1d8&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLE_BARREL_SHOTGUN&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Anti-Material Rifle" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_ANTIMATERIAL_RIFLE"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_LOADING,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 300/1800), Two-Handed, Loading, Heavy &amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;4500&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="18"&amp;gt;18 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;300/1800&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;3d12&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_ANTI_MATERIAL_RIFLE&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Shoulder Cannon" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_SHOULDER_CANNON"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_BLUDGEONING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_LOADING,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 60/200), Two-Handed, Loading, Bulky, Special&amp;lt;/p&amp;gt;
+			&amp;lt;h5&amp;gt;Shoulder Cannon Special Rules&amp;lt;/h5&amp;gt;
+			&amp;lt;p&amp;gt;You can make a special attack with a Shoulder Cannon that targets any creature within a 5 wide foot line out to its maximum  range. Any target in the path of this special attack must succeed a DC (8 + your Dexterity modifier + your proficiency bonus)  Strength saving throw or take it's damage roll and be knocked prone. They take half damage on a success and are not knocked  prone. Shoulder Cannons are considered siege weapons for the purposes of damage. Shoulder Cannons use a special type of  ammo known as a Mini-Cannonball, which weighs 2 lbs and costs 5gp per round.&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;3500&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="30"&amp;gt;30 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;60/200&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage"&amp;gt;4d10 bludgeoning&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_SHOULDER_CANNON&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Mini-Cannonball" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_MINICANNONBALL"&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Mini-Cannonballs are used with a Shoulder Cannon to make a ranged attack.&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;5&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="2"&amp;gt;2 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="type"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="stackable"&amp;gt;true&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Rifleblade" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_RIFLEBLADE"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 90/300), Two-Handed, Reload 6, Bayonet(1d6 Piercing/Slashing)&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;5000&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="10"&amp;gt;10 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;90/300&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d12&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_RIFLEBLADE&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Gunlance" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_GUNLANCE"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 70/230), Two-Handed, Reload 6, Bayonet(1d12 Piercing, Reach), Special&amp;lt;/p&amp;gt;
+			&amp;lt;h5&amp;gt;Gunlance Special Rules&amp;lt;/h5&amp;gt;
+			&amp;lt;p&amp;gt;You have disadvantage when you use the lance to attack a target within 5 feet of you. You can wield the lance one handed when mounted.&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;6000&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="16"&amp;gt;16 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;70/230&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;2d6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Nock Gun" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_NOCK_GUN"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 70/210), Two-Handed, Loading, Special&amp;lt;/p&amp;gt;
+			&amp;lt;h5&amp;gt;Nock Gun Special Rules&amp;lt;/h5&amp;gt;
+			&amp;lt;p&amp;gt;You can use your action to fire all 7 barrels of this gun at once. Make an attack roll with disadvantage. If you succeed, roll 7d12 damage. This attack deals 7d4 bludgeoning damage to you and forces you to succeed a DC 10 Strength saving throw or be knocked prone.&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;5500&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="20"&amp;gt;20 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;70/210&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d12&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_NOCK_GUN&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Musketball (20)" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_MUSKETBALL"&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Musketballs are used in primitive firearms without the scatter property.&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;2&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="1"&amp;gt;1 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="type"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="stackable"&amp;gt;true&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Musketball" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_MUSKETBALL"&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Musketballs are used in primitive firearms without the scatter property.&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="sp"&amp;gt;1&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="0.05"&amp;gt;1/20 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="type"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="stackable"&amp;gt;true&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Spreadshot" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_SPREADSHOT"&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Spreadshot is used in blunderbusses.&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="sp"&amp;gt;1&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="0.05"&amp;gt;1/20 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="type"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="stackable"&amp;gt;true&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Cartridge" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_CARTRIDGE"&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Cartridges are used in advanced firearms without the scatter property.&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="sp"&amp;gt;3&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="0.1"&amp;gt;1/10 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="type"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="stackable"&amp;gt;true&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Buckshot" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_BUCKSHOT"&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Buckshot is used in shotguns.&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="sp"&amp;gt;1&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="0.1"&amp;gt;1/10 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="type"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="stackable"&amp;gt;true&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Slug" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_SLUG"&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Slugs are used in shotguns. Removes the scatter property - functions like cartridge rounds.&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="sp"&amp;gt;3&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="0.3"&amp;gt;3/10 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="type"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="stackable"&amp;gt;true&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+&amp;lt;/elements&amp;gt;&lt;/al:baseline&gt;&lt;al:correction key="remove-musketball-pack" operation="remove" target-id="ID_RDDT_AA_MUSKETBALL" state="review-pending" original-fingerprint="82AE46B162127D5DDD587532028DB4BF5B8FA55285B1A10096890C18F222E149"&gt;&lt;al:reason&gt;Keep the single-piece Musketball; quantities represent multiples of 20.&lt;/al:reason&gt;&lt;/al:correction&gt;&lt;/al:corrections&gt;&lt;/elements&gt;</rr:payload>
+    </rr:variant>
+    <rr:variant source-path="aurora-sources/reddit/reddit-unearthed-arcana/arcane-artillery/guns.xml" source-sha256="412728DB3A783F20A6A0A1ED30CBB9C04DCA4120B0E97ECC381B50CBFADA269C">
+      <rr:payload sha256="D027CD88C9A474B977D70A22EFE5172E7254D5C4C71AF6EC65D114EB9BABF138">
+&lt;elements&gt;
+	&lt;info&gt;
+		&lt;name&gt;Guns&lt;/name&gt;
+		&lt;update version="0.0.1"&gt;
+			&lt;file name="guns.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/arcane-artillery/guns.xml" /&gt;
+		&lt;/update&gt;
+	&lt;/info&gt;
+
+	&lt;element name="Flintlock Pistol" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_FLINTLOCK_PISTOL"&gt;
+		&lt;supports&gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_SIDEARMS, ID_RDDT_AA_WEAPON_GROUP_FLINTLOCKPISTOLS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 30/90), Loading, Light, Misfire 3&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;250&lt;/set&gt;
+			&lt;set name="weight" lb="3"&gt;3 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;onehand&lt;/set&gt;
+			&lt;set name="range"&gt;30/90&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d6&lt;/set&gt;
+			&lt;set name="misfire"&gt;3&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_FLINTLOCKPISTOLS&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Dragoon" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_DRAGOON"&gt;
+		&lt;supports&gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_SCATTER, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_SIDEARMS, ID_RDDT_AA_WEAPON_GROUP_DRAGOONS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 10/30), Loading, Scatter (1d4), Misfire 3&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;300&lt;/set&gt;
+			&lt;set name="weight" lb="4"&gt;4 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;onehand&lt;/set&gt;
+			&lt;set name="range"&gt;10/30&lt;/set&gt;
+			&lt;set name="damage"&gt;1d8 bludgeoning&lt;/set&gt;
+			&lt;set name="misfire"&gt;3&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_DRAGOONS&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Pepperbox" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_PEPPERBOX"&gt;
+		&lt;supports&gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_RELOAD, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_SIDEARMS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 40/120), Reload 4, Shell Loading, Misfire 1&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;800&lt;/set&gt;
+			&lt;set name="weight" lb="4"&gt;4 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;onehand&lt;/set&gt;
+			&lt;set name="range"&gt;40/120&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d8&lt;/set&gt;
+			&lt;set name="misfire"&gt;1&lt;/set&gt;
+			&lt;set name="reload"&gt;4&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_PEPPERBOX&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Musket" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_MUSKET"&gt;
+		&lt;supports&gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_MUSKETS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 70/200), Two-Handed, Loading, Misfire 2&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;500&lt;/set&gt;
+			&lt;set name="weight" lb="10"&gt;10 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;70/200&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d12&lt;/set&gt;
+			&lt;set name="misfire"&gt;2&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_MUSKET&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Arquebus" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_ARQUEBUS"&gt;
+		&lt;supports&gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 60/150), Two-Handed, Loading, Heavy, Misfire 4&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;200&lt;/set&gt;
+			&lt;set name="weight" lb="13"&gt;13 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;60/150&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;3d4&lt;/set&gt;
+			&lt;set name="misfire"&gt;4&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_ARQUEBUS&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Blunderbuss" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_BLUNDERBUSS"&gt;
+		&lt;supports&gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_RDDT_AA_WEAPON_PROPERTY_SCATTER, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 15/45), Two-Handed, Loading, Scatter (1d6), Misfire 3&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;900&lt;/set&gt;
+			&lt;set name="weight" lb="7"&gt;7 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;15/45&lt;/set&gt;
+			&lt;set name="damage"&gt;1d12 bludgeoning&lt;/set&gt;
+			&lt;set name="misfire"&gt;3&lt;/set&gt;
+			&lt;set name="scatter"&gt;1d6&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_BLUNDERBUSS&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Wheellock Gun" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_WHEELLOCKGUN"&gt;
+		&lt;supports&gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_WHEELLOCKGUNS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 50/160), Two-Handed, Loading, Misfire 2&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;400&lt;/set&gt;
+			&lt;set name="weight" lb="5"&gt;5 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;50/160&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d10&lt;/set&gt;
+			&lt;set name="misfire"&gt;2&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_WHEELLOCKGUNS&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Pistol" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_PISTOL"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS, ID_RDDT_AA_WEAPON_GROUP_PISTOLS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 40/120), Reload 8, Light&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;1000&lt;/set&gt;
+			&lt;set name="weight" lb="2"&gt;2 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;onehand&lt;/set&gt;
+			&lt;set name="range"&gt;40/120&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d6&lt;/set&gt;
+			&lt;set name="reload"&gt;8&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_PISTOLS&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Heavy Pistol" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_HEAVYPISTOL"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS, ID_RDDT_AA_WEAPON_GROUP_PISTOLS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 40/140), Reload 8&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;1150&lt;/set&gt;
+			&lt;set name="weight" lb="3"&gt;3 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;onehand&lt;/set&gt;
+			&lt;set name="range"&gt;40/120&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d8&lt;/set&gt;
+			&lt;set name="reload"&gt;8&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_HEAVY_PISTOL&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Sawn-Off Shotgun" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_SAWNOFF"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS,ID_RDDT_AA_WEAPON_PROPERTY_SCATTER, ID_RDDT_AA_WEAPON_GROUP_SAWNOFFSHOTGUNS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 20/40), Reload 4, Scatter (1d4)&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;1200&lt;/set&gt;
+			&lt;set name="weight" lb="4"&gt;4 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;onehand&lt;/set&gt;
+			&lt;set name="range"&gt;20/40&lt;/set&gt;
+			&lt;set name="damage"&gt;2d4 bludgeoning&lt;/set&gt;
+			&lt;set name="reload"&gt;4&lt;/set&gt;
+			&lt;set name="scatter"&gt;1d4&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_SAWNOFFSHOTGUNS&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Rifle" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_RIFLE"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_RIFLES, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 90/300), Two-Handed, Reload 6&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;1500&lt;/set&gt;
+			&lt;set name="weight" lb="10"&gt;10 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;90/300&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d12&lt;/set&gt;
+			&lt;set name="reload"&gt;6&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_RIFLES&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Carbine" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_CARBINE"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_CARBINES, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 60/200), Two-Handed, Reload 8&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;1350&lt;/set&gt;
+			&lt;set name="weight" lb="6"&gt;6 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;60/200&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d10&lt;/set&gt;
+			&lt;set name="reload"&gt;6&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_CARBINES&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Shotgun" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_SHOTGUN"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_BLUDGEONING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_RDDT_AA_WEAPON_PROPERTY_SCATTER, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 30/60), Two-Handed, Scatter (1d6), Reload 6&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;2000&lt;/set&gt;
+			&lt;set name="weight" lb="7"&gt;7 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;30/60&lt;/set&gt;
+			&lt;set name="damage"&gt;1d12 bludgeoning&lt;/set&gt;
+			&lt;set name="reload"&gt;6&lt;/set&gt;
+			&lt;set name="scatter"&gt;1d6&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_SHOTGUNS&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+
+	&lt;element name="Heavy Rifle" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_HEAVYRIFLE"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 200/1000), Two-Handed, Loading, Heavy&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;2900&lt;/set&gt;
+			&lt;set name="weight" lb="18"&gt;18 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;200/1000&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;3d8&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_HEAVY_RIFLE&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	
+	&lt;element name="Repeating Crossbow" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_REPEATING_CROSSBOW"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_RDDT_AA_WEAPON_GROUP_CROSSBOWS 
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 100/400), Heavy, Two-Handed, Reload 6&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;100&lt;/set&gt;
+			&lt;set name="weight" lb="18"&gt;18 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;100/400&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d10&lt;/set&gt;
+			&lt;set name="reload"&gt;6&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Automatic Crossbow" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_AUTOMATIC_CROSSBOW"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_RDDT_AA_WEAPON_PROPERTY_AUTOMATIC,ID_RDDT_AA_WEAPON_GROUP_CROSSBOWS 
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 100/400), Heavy, Two-Handed, Automatic (1d10), Reload 20&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;200&lt;/set&gt;
+			&lt;set name="weight" lb="20"&gt;20 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;100/400&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d8&lt;/set&gt;
+			&lt;set name="reload"&gt;20&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Reloading Hand Crossbow" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_RELOADING_HAND_CROSSBOW"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_RDDT_AA_WEAPON_GROUP_CROSSBOWS 
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 30/120), Light, Reload 4&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;350&lt;/set&gt;
+			&lt;set name="weight" lb="3"&gt;3 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;onehand&lt;/set&gt;
+			&lt;set name="range"&gt;30/120&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d6&lt;/set&gt;
+			&lt;set name="reload"&gt;4&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Splinterfire Crossbow" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_SPLINTERFIRE_CROSSBOW"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_INTERNAL_WEAPON_PROPERTY_SCATTER,ID_RDDT_AA_WEAPON_GROUP_CROSSBOWS 
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 30/60), Heavy, Two-Handed, Scatter (1d6), Reload 6&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;400&lt;/set&gt;
+			&lt;set name="weight" lb="21"&gt;21 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;30/60&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d12&lt;/set&gt;
+			&lt;set name="reload"&gt;6&lt;/set&gt;
+			&lt;set name="scatter"&gt;1d6&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Automatic Pistol" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_AUTOMATIC_PISTOL"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS, ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_RDDT_AA_WEAPON_PROPERTY_AUTOMATIC, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 40/120), Light, Reload 24, Automatic (6d4)&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;2100&lt;/set&gt;
+			&lt;set name="weight" lb="3"&gt;3 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;onehand&lt;/set&gt;
+			&lt;set name="range"&gt;40/120&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;2d4&lt;/set&gt;
+			&lt;set name="reload"&gt;24&lt;/set&gt;
+			&lt;set name="automatic"&gt;6d4&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_AUTO_PISTOL&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Burst Pistol" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_BURST_PISTOL"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS, ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_RDDT_AA_WEAPON_PROPERTY_BURSTFIRE, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 30/90), Light, Reload 24, Burst Fire (3d8)&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;2100&lt;/set&gt;
+			&lt;set name="weight" lb="3"&gt;3 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;onehand&lt;/set&gt;
+			&lt;set name="range"&gt;30/90&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d8&lt;/set&gt;
+			&lt;set name="reload"&gt;24&lt;/set&gt;
+			&lt;set name="burst"&gt;3d8&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_BURST_PISTOL&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Revolver" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_REVOLVER"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 50/180), Light, Reload 6&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;2200&lt;/set&gt;
+			&lt;set name="weight" lb="3"&gt;3 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;onehand&lt;/set&gt;
+			&lt;set name="range"&gt;50/180&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d8&lt;/set&gt;
+			&lt;set name="reload"&gt;6&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_REVOLVER&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Hand Cannon" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_HAND_CANNON"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 60/200), Reload 6&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;2700&lt;/set&gt;
+			&lt;set name="weight" lb="4"&gt;4 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;onehand&lt;/set&gt;
+			&lt;set name="range"&gt;60/200&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d10&lt;/set&gt;
+			&lt;set name="reload"&gt;6&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_HAND_CANNON&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	
+	&lt;element name="Automatic Rifle" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_AUTOMATIC_RIFLE"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_RDDT_AA_WEAPON_PROPERTY_AUTOMATIC,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 90/300), Two-Handed, Reload 30, Automatic (6d6)&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;3500&lt;/set&gt;
+			&lt;set name="weight" lb="8"&gt;8 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;90/300&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;2d6&lt;/set&gt;
+			&lt;set name="reload"&gt;30&lt;/set&gt;
+			&lt;set name="automatic"&gt;6d6&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_AUTOMATIC_RIFLE&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Burst Rifle" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_BURST_RIFLE"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_RDDT_AA_WEAPON_PROPERTY_BURSTFIRE, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 90/300), Two-Handed, Reload 24, Burst Fire (3d12)&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;3500&lt;/set&gt;
+			&lt;set name="weight" lb="8"&gt;8 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;90/300&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d12&lt;/set&gt;
+			&lt;set name="reload"&gt;24&lt;/set&gt;
+			&lt;set name="burst"&gt;3d12&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_BURST_RIFLE&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Double Barrel Shotgun" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_DOUBLE_BARREL_SHOTGUN"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_BLUDGEONING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_LOADING,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_SCATTER, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 90/300), Two-Handed, Scatter (1d8), Loading, Special&lt;/p&gt;
+			&lt;h5&gt;Double Barrel Shotgun Special Rules&lt;/h5&gt;
+			&lt;p&gt;Double Barrel shotguns can be fired twice per attack. When you make an attack roll with a double barrel shotgun, you can make two attack rolls at the same creature. The second attack roll is made with disadvantage, and on a hit, you do not add your ability score modifier to the damage of that attack, unless your modifier is negative.&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;2400&lt;/set&gt;
+			&lt;set name="weight" lb="11"&gt;11 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;90/300&lt;/set&gt;
+			&lt;set name="damage"&gt;4d10 bludgeoning&lt;/set&gt;
+			&lt;set name="scatter"&gt;1d8&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLE_BARREL_SHOTGUN&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Anti-Material Rifle" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_ANTIMATERIAL_RIFLE"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_LOADING,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 300/1800), Two-Handed, Loading, Heavy &lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;4500&lt;/set&gt;
+			&lt;set name="weight" lb="18"&gt;18 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;300/1800&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;3d12&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_ANTI_MATERIAL_RIFLE&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Shoulder Cannon" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_SHOULDER_CANNON"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_BLUDGEONING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_LOADING,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 60/200), Two-Handed, Loading, Bulky, Special&lt;/p&gt;
+			&lt;h5&gt;Shoulder Cannon Special Rules&lt;/h5&gt;
+			&lt;p&gt;You can make a special attack with a Shoulder Cannon that targets any creature within a 5 wide foot line out to its maximum  range. Any target in the path of this special attack must succeed a DC (8 + your Dexterity modifier + your proficiency bonus)  Strength saving throw or take it's damage roll and be knocked prone. They take half damage on a success and are not knocked  prone. Shoulder Cannons are considered siege weapons for the purposes of damage. Shoulder Cannons use a special type of  ammo known as a Mini-Cannonball, which weighs 2 lbs and costs 5gp per round.&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;3500&lt;/set&gt;
+			&lt;set name="weight" lb="30"&gt;30 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;60/200&lt;/set&gt;
+			&lt;set name="damage"&gt;4d10 bludgeoning&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_SHOULDER_CANNON&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Mini-Cannonball" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_MINICANNONBALL"&gt;
+		&lt;description&gt;
+			&lt;p&gt;Mini-Cannonballs are used with a Shoulder Cannon to make a ranged attack.&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Ammunition&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;5&lt;/set&gt;
+			&lt;set name="weight" lb="2"&gt;2 lb.&lt;/set&gt;
+			&lt;set name="type"&gt;Ammunition&lt;/set&gt;
+			&lt;set name="stackable"&gt;true&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Rifleblade" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_RIFLEBLADE"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 90/300), Two-Handed, Reload 6, Bayonet(1d6 Piercing/Slashing)&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;5000&lt;/set&gt;
+			&lt;set name="weight" lb="10"&gt;10 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;90/300&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d12&lt;/set&gt;
+			&lt;set name="reload"&gt;6&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_RIFLEBLADE&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Gunlance" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_GUNLANCE"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 70/230), Two-Handed, Reload 6, Bayonet(1d12 Piercing, Reach), Special&lt;/p&gt;
+			&lt;h5&gt;Gunlance Special Rules&lt;/h5&gt;
+			&lt;p&gt;You have disadvantage when you use the lance to attack a target within 5 feet of you. You can wield the lance one handed when mounted.&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;6000&lt;/set&gt;
+			&lt;set name="weight" lb="16"&gt;16 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;70/230&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;2d6&lt;/set&gt;
+			&lt;set name="reload"&gt;6&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Nock Gun" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_NOCK_GUN"&gt;
+		&lt;supports&gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&lt;/supports&gt;
+		&lt;description&gt;
+			&lt;p&gt;Ammunition (range 70/210), Two-Handed, Loading, Special&lt;/p&gt;
+			&lt;h5&gt;Nock Gun Special Rules&lt;/h5&gt;
+			&lt;p&gt;You can use your action to fire all 7 barrels of this gun at once. Make an attack roll with disadvantage. If you succeed, roll 7d12 damage. This attack deals 7d4 bludgeoning damage to you and forces you to succeed a DC 10 Strength saving throw or be knocked prone.&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Arcane Artillery&lt;/set&gt;
+			&lt;set name="cost" currency="gp"&gt;5500&lt;/set&gt;
+			&lt;set name="weight" lb="20"&gt;20 lb.&lt;/set&gt;
+			&lt;set name="slot"&gt;twohand&lt;/set&gt;
+			&lt;set name="range"&gt;70/210&lt;/set&gt;
+			&lt;set name="damage" type="piercing"&gt;1d12&lt;/set&gt;
+			&lt;set name="proficiency"&gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_NOCK_GUN&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	
+	
+	&lt;element name="Musketball" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_MUSKETBALL"&gt;
+		&lt;description&gt;
+			&lt;p&gt;Musketballs are used in primitive firearms without the scatter property.&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Ammunition&lt;/set&gt;
+			&lt;set name="cost" currency="sp"&gt;1&lt;/set&gt;
+			&lt;set name="weight" lb="0.05"&gt;1/20 lb.&lt;/set&gt;
+			&lt;set name="type"&gt;Ammunition&lt;/set&gt;
+			&lt;set name="stackable"&gt;true&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Spreadshot" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_SPREADSHOT"&gt;
+		&lt;description&gt;
+			&lt;p&gt;Spreadshot is used in blunderbusses.&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Ammunition&lt;/set&gt;
+			&lt;set name="cost" currency="sp"&gt;1&lt;/set&gt;
+			&lt;set name="weight" lb="0.05"&gt;1/20 lb.&lt;/set&gt;
+			&lt;set name="type"&gt;Ammunition&lt;/set&gt;
+			&lt;set name="stackable"&gt;true&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Cartridge" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_CARTRIDGE"&gt;
+		&lt;description&gt;
+			&lt;p&gt;Cartridges are used in advanced firearms without the scatter property.&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Ammunition&lt;/set&gt;
+			&lt;set name="cost" currency="sp"&gt;3&lt;/set&gt;
+			&lt;set name="weight" lb="0.1"&gt;1/10 lb.&lt;/set&gt;
+			&lt;set name="type"&gt;Ammunition&lt;/set&gt;
+			&lt;set name="stackable"&gt;true&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Buckshot" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_BUCKSHOT"&gt;
+		&lt;description&gt;
+			&lt;p&gt;Buckshot is used in shotguns.&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Ammunition&lt;/set&gt;
+			&lt;set name="cost" currency="sp"&gt;1&lt;/set&gt;
+			&lt;set name="weight" lb="0.1"&gt;1/10 lb.&lt;/set&gt;
+			&lt;set name="type"&gt;Ammunition&lt;/set&gt;
+			&lt;set name="stackable"&gt;true&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+	&lt;element name="Slug" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_SLUG"&gt;
+		&lt;description&gt;
+			&lt;p&gt;Slugs are used in shotguns. Removes the scatter property - functions like cartridge rounds.&lt;/p&gt;
+		&lt;/description&gt;
+		&lt;setters&gt;
+			&lt;set name="category"&gt;Ammunition&lt;/set&gt;
+			&lt;set name="cost" currency="sp"&gt;3&lt;/set&gt;
+			&lt;set name="weight" lb="0.3"&gt;3/10 lb.&lt;/set&gt;
+			&lt;set name="type"&gt;Ammunition&lt;/set&gt;
+			&lt;set name="stackable"&gt;true&lt;/set&gt;
+		&lt;/setters&gt;
+	&lt;/element&gt;
+	
+&lt;al:corrections xmlns:al="urn:aurora-lights:corrections:1" version="1" source-path="aurora-sources/reddit/reddit-unearthed-arcana/arcane-artillery/guns.xml"&gt;&lt;al:baseline encoding="escaped-xml"&gt;&amp;lt;?xml version="1.0" encoding="utf-8" ?&amp;gt;
+&amp;lt;elements&amp;gt;
+	&amp;lt;info&amp;gt;
+		&amp;lt;name&amp;gt;Guns&amp;lt;/name&amp;gt;
+		&amp;lt;update version="0.0.1"&amp;gt;
+			&amp;lt;file name="guns.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/arcane-artillery/guns.xml" /&amp;gt;
+		&amp;lt;/update&amp;gt;
+	&amp;lt;/info&amp;gt;
+
+	&amp;lt;element name="Flintlock Pistol" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_FLINTLOCK_PISTOL"&amp;gt;
+		&amp;lt;supports&amp;gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_SIDEARMS, ID_RDDT_AA_WEAPON_GROUP_FLINTLOCKPISTOLS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 30/90), Loading, Light, Misfire 3&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;250&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="3"&amp;gt;3 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;onehand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;30/90&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="misfire"&amp;gt;3&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_FLINTLOCKPISTOLS&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Dragoon" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_DRAGOON"&amp;gt;
+		&amp;lt;supports&amp;gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_SCATTER, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_SIDEARMS, ID_RDDT_AA_WEAPON_GROUP_DRAGOONS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 10/30), Loading, Scatter (1d4), Misfire 3&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;300&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="4"&amp;gt;4 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;onehand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;10/30&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage"&amp;gt;1d8 bludgeoning&amp;lt;/set&amp;gt;
+			&amp;lt;set name="misfire"&amp;gt;3&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_DRAGOONS&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Pepperbox" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_PEPPERBOX"&amp;gt;
+		&amp;lt;supports&amp;gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_RELOAD, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_SIDEARMS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 40/120), Reload 4, Shell Loading, Misfire 1&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;800&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="4"&amp;gt;4 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;onehand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;40/120&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d8&amp;lt;/set&amp;gt;
+			&amp;lt;set name="misfire"&amp;gt;1&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;4&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_PEPPERBOX&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Musket" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_MUSKET"&amp;gt;
+		&amp;lt;supports&amp;gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_MUSKETS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 70/200), Two-Handed, Loading, Misfire 2&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;500&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="10"&amp;gt;10 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;70/200&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d12&amp;lt;/set&amp;gt;
+			&amp;lt;set name="misfire"&amp;gt;2&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_MUSKET&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Arquebus" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_ARQUEBUS"&amp;gt;
+		&amp;lt;supports&amp;gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 60/150), Two-Handed, Loading, Heavy, Misfire 4&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;200&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="13"&amp;gt;13 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;60/150&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;3d4&amp;lt;/set&amp;gt;
+			&amp;lt;set name="misfire"&amp;gt;4&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_ARQUEBUS&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Blunderbuss" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_BLUNDERBUSS"&amp;gt;
+		&amp;lt;supports&amp;gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_RDDT_AA_WEAPON_PROPERTY_SCATTER, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 15/45), Two-Handed, Loading, Scatter (1d6), Misfire 3&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;900&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="7"&amp;gt;7 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;15/45&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage"&amp;gt;1d12 bludgeoning&amp;lt;/set&amp;gt;
+			&amp;lt;set name="misfire"&amp;gt;3&amp;lt;/set&amp;gt;
+			&amp;lt;set name="scatter"&amp;gt;1d6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_BLUNDERBUSS&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Wheellock Gun" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_WHEELLOCKGUN"&amp;gt;
+		&amp;lt;supports&amp;gt; ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_WHEELLOCKGUNS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS &amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 50/160), Two-Handed, Loading, Misfire 2&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;400&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="5"&amp;gt;5 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;50/160&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d10&amp;lt;/set&amp;gt;
+			&amp;lt;set name="misfire"&amp;gt;2&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_WHEELLOCKGUNS&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Pistol" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_PISTOL"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS, ID_RDDT_AA_WEAPON_GROUP_PISTOLS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 40/120), Reload 8, Light&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;1000&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="2"&amp;gt;2 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;onehand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;40/120&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;8&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_PISTOLS&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Heavy Pistol" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_HEAVYPISTOL"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS, ID_RDDT_AA_WEAPON_GROUP_PISTOLS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 40/140), Reload 8&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;1150&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="3"&amp;gt;3 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;onehand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;40/120&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d8&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;8&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_HEAVY_PISTOL&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Sawn-Off Shotgun" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_SAWNOFF"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS,ID_RDDT_AA_WEAPON_PROPERTY_SCATTER, ID_RDDT_AA_WEAPON_GROUP_SAWNOFFSHOTGUNS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 20/40), Reload 4, Scatter (1d4)&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;1200&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="4"&amp;gt;4 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;onehand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;20/40&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage"&amp;gt;2d4 bludgeoning&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;4&amp;lt;/set&amp;gt;
+			&amp;lt;set name="scatter"&amp;gt;1d4&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_SAWNOFFSHOTGUNS&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Rifle" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_RIFLE"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_RIFLES, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 90/300), Two-Handed, Reload 6&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;1500&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="10"&amp;gt;10 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;90/300&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d12&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_RIFLES&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Carbine" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_CARBINE"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_CARBINES, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 60/200), Two-Handed, Reload 8&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;1350&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="6"&amp;gt;6 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;60/200&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d10&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_CARBINES&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Shotgun" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_SHOTGUN"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_BLUDGEONING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_RDDT_AA_WEAPON_PROPERTY_SCATTER, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 30/60), Two-Handed, Scatter (1d6), Reload 6&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;2000&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="7"&amp;gt;7 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;30/60&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage"&amp;gt;1d12 bludgeoning&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="scatter"&amp;gt;1d6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_SHOTGUNS&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+
+	&amp;lt;element name="Heavy Rifle" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_HEAVYRIFLE"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 200/1000), Two-Handed, Loading, Heavy&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;2900&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="18"&amp;gt;18 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;200/1000&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;3d8&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_HEAVY_RIFLE&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	
+	&amp;lt;element name="Repeating Crossbow" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_REPEATING_CROSSBOW"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_RDDT_AA_WEAPON_GROUP_CROSSBOWS 
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 100/400), Heavy, Two-Handed, Reload 6&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;100&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="18"&amp;gt;18 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;100/400&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d10&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Automatic Crossbow" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_AUTOMATIC_CROSSBOW"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_RDDT_AA_WEAPON_PROPERTY_AUTOMATIC,ID_RDDT_AA_WEAPON_GROUP_CROSSBOWS 
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 100/400), Heavy, Two-Handed, Automatic (1d10), Reload 20&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;200&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="20"&amp;gt;20 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;100/400&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d8&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;20&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Reloading Hand Crossbow" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_RELOADING_HAND_CROSSBOW"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_RDDT_AA_WEAPON_GROUP_CROSSBOWS 
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 30/120), Light, Reload 4&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;350&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="3"&amp;gt;3 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;onehand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;30/120&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;4&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Splinterfire Crossbow" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_SPLINTERFIRE_CROSSBOW"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_INTERNAL_WEAPON_PROPERTY_SCATTER,ID_RDDT_AA_WEAPON_GROUP_CROSSBOWS 
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 30/60), Heavy, Two-Handed, Scatter (1d6), Reload 6&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;400&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="21"&amp;gt;21 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;30/60&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d12&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="scatter"&amp;gt;1d6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Automatic Pistol" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_AUTOMATIC_PISTOL"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS, ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_RDDT_AA_WEAPON_PROPERTY_AUTOMATIC, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 40/120), Light, Reload 24, Automatic (6d4)&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;2100&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="3"&amp;gt;3 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;onehand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;40/120&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;2d4&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;24&amp;lt;/set&amp;gt;
+			&amp;lt;set name="automatic"&amp;gt;6d4&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_AUTO_PISTOL&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Burst Pistol" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_BURST_PISTOL"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS, ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_RDDT_AA_WEAPON_PROPERTY_BURSTFIRE, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 30/90), Light, Reload 24, Burst Fire (3d8)&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;2100&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="3"&amp;gt;3 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;onehand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;30/90&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d8&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;24&amp;lt;/set&amp;gt;
+			&amp;lt;set name="burst"&amp;gt;3d8&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_BURST_PISTOL&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Revolver" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_REVOLVER"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 50/180), Light, Reload 6&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;2200&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="3"&amp;gt;3 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;onehand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;50/180&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d8&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_REVOLVER&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Hand Cannon" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_HAND_CANNON"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_SIDEARMS, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 60/200), Reload 6&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;2700&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="4"&amp;gt;4 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;onehand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;60/200&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d10&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_HAND_CANNON&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	
+	&amp;lt;element name="Automatic Rifle" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_AUTOMATIC_RIFLE"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_RDDT_AA_WEAPON_PROPERTY_AUTOMATIC,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 90/300), Two-Handed, Reload 30, Automatic (6d6)&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;3500&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="8"&amp;gt;8 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;90/300&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;2d6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;30&amp;lt;/set&amp;gt;
+			&amp;lt;set name="automatic"&amp;gt;6d6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_AUTOMATIC_RIFLE&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Burst Rifle" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_BURST_RIFLE"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_RDDT_AA_WEAPON_PROPERTY_BURSTFIRE, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 90/300), Two-Handed, Reload 24, Burst Fire (3d12)&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;3500&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="8"&amp;gt;8 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;90/300&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d12&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;24&amp;lt;/set&amp;gt;
+			&amp;lt;set name="burst"&amp;gt;3d12&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_BURST_RIFLE&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Double Barrel Shotgun" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_DOUBLE_BARREL_SHOTGUN"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_BLUDGEONING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_LOADING,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_SCATTER, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 90/300), Two-Handed, Scatter (1d8), Loading, Special&amp;lt;/p&amp;gt;
+			&amp;lt;h5&amp;gt;Double Barrel Shotgun Special Rules&amp;lt;/h5&amp;gt;
+			&amp;lt;p&amp;gt;Double Barrel shotguns can be fired twice per attack. When you make an attack roll with a double barrel shotgun, you can make two attack rolls at the same creature. The second attack roll is made with disadvantage, and on a hit, you do not add your ability score modifier to the damage of that attack, unless your modifier is negative.&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;2400&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="11"&amp;gt;11 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;90/300&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage"&amp;gt;4d10 bludgeoning&amp;lt;/set&amp;gt;
+			&amp;lt;set name="scatter"&amp;gt;1d8&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLE_BARREL_SHOTGUN&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Anti-Material Rifle" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_ANTIMATERIAL_RIFLE"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_LOADING,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 300/1800), Two-Handed, Loading, Heavy &amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;4500&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="18"&amp;gt;18 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;300/1800&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;3d12&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_ANTI_MATERIAL_RIFLE&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Shoulder Cannon" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_SHOULDER_CANNON"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_BLUDGEONING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_LOADING,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 60/200), Two-Handed, Loading, Bulky, Special&amp;lt;/p&amp;gt;
+			&amp;lt;h5&amp;gt;Shoulder Cannon Special Rules&amp;lt;/h5&amp;gt;
+			&amp;lt;p&amp;gt;You can make a special attack with a Shoulder Cannon that targets any creature within a 5 wide foot line out to its maximum  range. Any target in the path of this special attack must succeed a DC (8 + your Dexterity modifier + your proficiency bonus)  Strength saving throw or take it's damage roll and be knocked prone. They take half damage on a success and are not knocked  prone. Shoulder Cannons are considered siege weapons for the purposes of damage. Shoulder Cannons use a special type of  ammo known as a Mini-Cannonball, which weighs 2 lbs and costs 5gp per round.&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;3500&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="30"&amp;gt;30 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;60/200&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage"&amp;gt;4d10 bludgeoning&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_SHOULDER_CANNON&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Mini-Cannonball" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_MINICANNONBALL"&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Mini-Cannonballs are used with a Shoulder Cannon to make a ranged attack.&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;5&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="2"&amp;gt;2 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="type"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="stackable"&amp;gt;true&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Rifleblade" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_RIFLEBLADE"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 90/300), Two-Handed, Reload 6, Bayonet(1d6 Piercing/Slashing)&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;5000&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="10"&amp;gt;10 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;90/300&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d12&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_RIFLEBLADE&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Gunlance" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_GUNLANCE"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 70/230), Two-Handed, Reload 6, Bayonet(1d12 Piercing, Reach), Special&amp;lt;/p&amp;gt;
+			&amp;lt;h5&amp;gt;Gunlance Special Rules&amp;lt;/h5&amp;gt;
+			&amp;lt;p&amp;gt;You have disadvantage when you use the lance to attack a target within 5 feet of you. You can wield the lance one handed when mounted.&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;6000&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="16"&amp;gt;16 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;70/230&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;2d6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="reload"&amp;gt;6&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_GUNLANCE&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Nock Gun" type="Weapon" source="Arcane Artillery" id="ID_RDDT_AA_WEAPON_NOCK_GUN"&amp;gt;
+		&amp;lt;supports&amp;gt;ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_FIREARMS
+		&amp;lt;/supports&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Ammunition (range 70/210), Two-Handed, Loading, Special&amp;lt;/p&amp;gt;
+			&amp;lt;h5&amp;gt;Nock Gun Special Rules&amp;lt;/h5&amp;gt;
+			&amp;lt;p&amp;gt;You can use your action to fire all 7 barrels of this gun at once. Make an attack roll with disadvantage. If you succeed, roll 7d12 damage. This attack deals 7d4 bludgeoning damage to you and forces you to succeed a DC 10 Strength saving throw or be knocked prone.&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Arcane Artillery&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;5500&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="20"&amp;gt;20 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="slot"&amp;gt;twohand&amp;lt;/set&amp;gt;
+			&amp;lt;set name="range"&amp;gt;70/210&amp;lt;/set&amp;gt;
+			&amp;lt;set name="damage" type="piercing"&amp;gt;1d12&amp;lt;/set&amp;gt;
+			&amp;lt;set name="proficiency"&amp;gt;ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_NOCK_GUN&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Musketball (20)" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_MUSKETBALL"&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Musketballs are used in primitive firearms without the scatter property.&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="gp"&amp;gt;2&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="1"&amp;gt;1 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="type"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="stackable"&amp;gt;true&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Musketball" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_MUSKETBALL"&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Musketballs are used in primitive firearms without the scatter property.&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="sp"&amp;gt;1&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="0.05"&amp;gt;1/20 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="type"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="stackable"&amp;gt;true&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Spreadshot" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_SPREADSHOT"&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Spreadshot is used in blunderbusses.&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="sp"&amp;gt;1&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="0.05"&amp;gt;1/20 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="type"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="stackable"&amp;gt;true&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Cartridge" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_CARTRIDGE"&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Cartridges are used in advanced firearms without the scatter property.&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="sp"&amp;gt;3&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="0.1"&amp;gt;1/10 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="type"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="stackable"&amp;gt;true&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Buckshot" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_BUCKSHOT"&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Buckshot is used in shotguns.&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="sp"&amp;gt;1&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="0.1"&amp;gt;1/10 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="type"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="stackable"&amp;gt;true&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+	&amp;lt;element name="Slug" type="Item" source="Arcane Artillery" id="ID_RDDT_AA_SLUG"&amp;gt;
+		&amp;lt;description&amp;gt;
+			&amp;lt;p&amp;gt;Slugs are used in shotguns. Removes the scatter property - functions like cartridge rounds.&amp;lt;/p&amp;gt;
+		&amp;lt;/description&amp;gt;
+		&amp;lt;setters&amp;gt;
+			&amp;lt;set name="category"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="cost" currency="sp"&amp;gt;3&amp;lt;/set&amp;gt;
+			&amp;lt;set name="weight" lb="0.3"&amp;gt;3/10 lb.&amp;lt;/set&amp;gt;
+			&amp;lt;set name="type"&amp;gt;Ammunition&amp;lt;/set&amp;gt;
+			&amp;lt;set name="stackable"&amp;gt;true&amp;lt;/set&amp;gt;
+		&amp;lt;/setters&amp;gt;
+	&amp;lt;/element&amp;gt;
+	
+&amp;lt;/elements&amp;gt;&lt;/al:baseline&gt;&lt;al:correction key="remove-musketball-pack" operation="remove" target-id="ID_RDDT_AA_MUSKETBALL" state="review-pending" original-fingerprint="82AE46B162127D5DDD587532028DB4BF5B8FA55285B1A10096890C18F222E149"&gt;&lt;al:reason&gt;Keep the single-piece Musketball; quantities represent multiples of 20.&lt;/al:reason&gt;&lt;/al:correction&gt;&lt;/al:corrections&gt;&lt;/elements&gt;</rr:payload>
+    </rr:variant>
+  </rr:proposal>
+</elements>
