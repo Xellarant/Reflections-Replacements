@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "1.1.0",
+  "version": "1.2.0",
   "entries": [
     {
       "id": "dmg24-walloping-ammunition",
@@ -938,6 +938,266 @@
           "state": "review-pending",
           "group": null,
           "reason": "2026-10-06 user-authorized local repair, written from the Content Doctor. Rarity \"unommon\" is a typo of \"Uncommon\" (Bestial Armor). Not accepted upstream."
+        }
+      ]
+    },
+    {
+      "id": "phb24-asi-repeatability",
+      "revision": "1.0.0",
+      "title": "2024 Ability Score Improvement repeatability",
+      "summary": "Mark all eight Ability Score Improvement definitions as repeatable while preserving their IDs and level requirements.",
+      "rationale": "The PHB 2024 feat text explicitly permits repeated acquisition, but its numbered definitions omit allow duplicate. The metadata lets the existing engine admit repeated choices. This managed replacement supplies the setter directly in each definition; it preserves all existing rules and does not depend on append setter handling.",
+      "requires": [],
+      "variants": [
+        {
+          "sourcePath": "core/players-handbook-2024/feats-general.xml",
+          "sourceSha256": "25344D661787B70392F3AA8463239C8AE72905D7185138694D23B4003D9C06C5",
+          "payloadSha256": "48730AA903BE7EAFDD1590AF2B376AACAE17DF6D070862FEFFFAF94DF4CD8512",
+          "upstreamUrl": "https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook-2024/feats/feats-general.xml",
+          "correctionKeys": [
+            "repeatable-ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT",
+            "repeatable-ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_2",
+            "repeatable-ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_3",
+            "repeatable-ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_4",
+            "repeatable-ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_5",
+            "repeatable-ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_6",
+            "repeatable-ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_7",
+            "repeatable-ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_8"
+          ]
+        },
+        {
+          "sourcePath": "aurora-sources/AuroraLegacy/core/players-handbook-2024/feats-general.xml",
+          "sourceSha256": "25344D661787B70392F3AA8463239C8AE72905D7185138694D23B4003D9C06C5",
+          "payloadSha256": "F606584E846CE308ED1B5BD0D5B84B851BF2AB6D1E19C776A22019165091275F",
+          "upstreamUrl": "https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook-2024/feats/feats-general.xml",
+          "correctionKeys": [
+            "repeatable-ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT",
+            "repeatable-ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_2",
+            "repeatable-ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_3",
+            "repeatable-ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_4",
+            "repeatable-ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_5",
+            "repeatable-ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_6",
+            "repeatable-ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_7",
+            "repeatable-ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_8"
+          ]
+        }
+      ],
+      "corrections": [
+        {
+          "key": "repeatable-ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT",
+          "operation": "replace",
+          "targetId": "ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT",
+          "replacementId": null,
+          "originalFingerprint": "961A225B23D0621A89CF99D0880420BC32EA721D347BB39F34DB749E17FBD2C4",
+          "state": "review-pending",
+          "group": null,
+          "reason": "2026-10-07 reviewed content repair: declare this repeatable PHB 2024 feat with the engine's allow duplicate metadata; preserve its ID, prerequisites, rules, and text."
+        },
+        {
+          "key": "repeatable-ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_2",
+          "operation": "replace",
+          "targetId": "ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_2",
+          "replacementId": null,
+          "originalFingerprint": "8038D5952F852FE689ADF65C79C50AFAD9F56DED41551369C7D40F239C6966DE",
+          "state": "review-pending",
+          "group": null,
+          "reason": "2026-10-07 reviewed content repair: declare this repeatable PHB 2024 feat with the engine's allow duplicate metadata; preserve its ID, prerequisites, rules, and text."
+        },
+        {
+          "key": "repeatable-ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_3",
+          "operation": "replace",
+          "targetId": "ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_3",
+          "replacementId": null,
+          "originalFingerprint": "0EDC02767D16ED712458A43C8FB4C7577D1DCD98EE944FA4C3C51E36545660EF",
+          "state": "review-pending",
+          "group": null,
+          "reason": "2026-10-07 reviewed content repair: declare this repeatable PHB 2024 feat with the engine's allow duplicate metadata; preserve its ID, prerequisites, rules, and text."
+        },
+        {
+          "key": "repeatable-ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_4",
+          "operation": "replace",
+          "targetId": "ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_4",
+          "replacementId": null,
+          "originalFingerprint": "B6920C6DB0BF210F85695304D1970D293DF9EC959BF70BF15B723AEB98744B8E",
+          "state": "review-pending",
+          "group": null,
+          "reason": "2026-10-07 reviewed content repair: declare this repeatable PHB 2024 feat with the engine's allow duplicate metadata; preserve its ID, prerequisites, rules, and text."
+        },
+        {
+          "key": "repeatable-ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_5",
+          "operation": "replace",
+          "targetId": "ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_5",
+          "replacementId": null,
+          "originalFingerprint": "FB341F314806CB196D203334AD4EFE30D3D8C4897CBA01EDC526A78E8AF478DE",
+          "state": "review-pending",
+          "group": null,
+          "reason": "2026-10-07 reviewed content repair: declare this repeatable PHB 2024 feat with the engine's allow duplicate metadata; preserve its ID, prerequisites, rules, and text."
+        },
+        {
+          "key": "repeatable-ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_6",
+          "operation": "replace",
+          "targetId": "ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_6",
+          "replacementId": null,
+          "originalFingerprint": "5A29160C2DA40FC5CC7F01A9F9A734763D492C4D971AC34B36B1AF8957910539",
+          "state": "review-pending",
+          "group": null,
+          "reason": "2026-10-07 reviewed content repair: declare this repeatable PHB 2024 feat with the engine's allow duplicate metadata; preserve its ID, prerequisites, rules, and text."
+        },
+        {
+          "key": "repeatable-ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_7",
+          "operation": "replace",
+          "targetId": "ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_7",
+          "replacementId": null,
+          "originalFingerprint": "BB1A909250DAFDE3E159E8AF782786E0DB44CA50B625BAEE79297B297EA5596C",
+          "state": "review-pending",
+          "group": null,
+          "reason": "2026-10-07 reviewed content repair: declare this repeatable PHB 2024 feat with the engine's allow duplicate metadata; preserve its ID, prerequisites, rules, and text."
+        },
+        {
+          "key": "repeatable-ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_8",
+          "operation": "replace",
+          "targetId": "ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_8",
+          "replacementId": null,
+          "originalFingerprint": "6D4D2B11CC7B859F90082FD704080121549E7334AFD81A6A8F811D905BB64DA3",
+          "state": "review-pending",
+          "group": null,
+          "reason": "2026-10-07 reviewed content repair: declare this repeatable PHB 2024 feat with the engine's allow duplicate metadata; preserve its ID, prerequisites, rules, and text."
+        }
+      ]
+    },
+    {
+      "id": "phb24-skilled-repeatability",
+      "revision": "1.0.0",
+      "title": "2024 Skilled repeatability",
+      "summary": "Mark all nine Skilled definitions as repeatable while preserving their IDs and proficiency choices.",
+      "rationale": "The PHB 2024 feat text explicitly permits repeated acquisition, but its numbered definitions omit allow duplicate. The metadata lets the existing engine admit repeated choices. This managed replacement supplies the setter directly in each definition; it preserves all existing rules and does not depend on append setter handling.",
+      "requires": [],
+      "variants": [
+        {
+          "sourcePath": "core/players-handbook-2024/feats-origin.xml",
+          "sourceSha256": "5270B0C9446117A7537107E17843E1BF36225E90AEA5BB9A84E2224C73A3C896",
+          "payloadSha256": "07ED7AB583D75B18C6B5E1E3D530B4E2F338ECF231C5D364D5020C752453D0C4",
+          "upstreamUrl": "https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook-2024/feats/feats-origin.xml",
+          "correctionKeys": [
+            "repeatable-ID_WOTC_PHB24_FEAT_SKILLED",
+            "repeatable-ID_WOTC_PHB24_FEAT_SKILLED_2",
+            "repeatable-ID_WOTC_PHB24_FEAT_SKILLED_3",
+            "repeatable-ID_WOTC_PHB24_FEAT_SKILLED_4",
+            "repeatable-ID_WOTC_PHB24_FEAT_SKILLED_5",
+            "repeatable-ID_WOTC_PHB24_FEAT_SKILLED_6",
+            "repeatable-ID_WOTC_PHB24_FEAT_SKILLED_7",
+            "repeatable-ID_WOTC_PHB24_FEAT_SKILLED_8",
+            "repeatable-ID_WOTC_PHB24_FEAT_SKILLED_9"
+          ]
+        },
+        {
+          "sourcePath": "aurora-sources/AuroraLegacy/core/players-handbook-2024/feats-origin.xml",
+          "sourceSha256": "5270B0C9446117A7537107E17843E1BF36225E90AEA5BB9A84E2224C73A3C896",
+          "payloadSha256": "B04DF4A2F205F4ED0560CE9262A95CE880C79EEF339D2F3387BA813337432146",
+          "upstreamUrl": "https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook-2024/feats/feats-origin.xml",
+          "correctionKeys": [
+            "repeatable-ID_WOTC_PHB24_FEAT_SKILLED",
+            "repeatable-ID_WOTC_PHB24_FEAT_SKILLED_2",
+            "repeatable-ID_WOTC_PHB24_FEAT_SKILLED_3",
+            "repeatable-ID_WOTC_PHB24_FEAT_SKILLED_4",
+            "repeatable-ID_WOTC_PHB24_FEAT_SKILLED_5",
+            "repeatable-ID_WOTC_PHB24_FEAT_SKILLED_6",
+            "repeatable-ID_WOTC_PHB24_FEAT_SKILLED_7",
+            "repeatable-ID_WOTC_PHB24_FEAT_SKILLED_8",
+            "repeatable-ID_WOTC_PHB24_FEAT_SKILLED_9"
+          ]
+        }
+      ],
+      "corrections": [
+        {
+          "key": "repeatable-ID_WOTC_PHB24_FEAT_SKILLED",
+          "operation": "replace",
+          "targetId": "ID_WOTC_PHB24_FEAT_SKILLED",
+          "replacementId": null,
+          "originalFingerprint": "FD04B565ABEA0388136277FE7DACFEB87689E0441105BAEF587872F7DE0AE05C",
+          "state": "review-pending",
+          "group": null,
+          "reason": "2026-10-07 reviewed content repair: declare this repeatable PHB 2024 feat with the engine's allow duplicate metadata; preserve its ID, prerequisites, rules, and text."
+        },
+        {
+          "key": "repeatable-ID_WOTC_PHB24_FEAT_SKILLED_2",
+          "operation": "replace",
+          "targetId": "ID_WOTC_PHB24_FEAT_SKILLED_2",
+          "replacementId": null,
+          "originalFingerprint": "B055035A39E997AABC5E46EA842AE42D0000D08F856AFC8490FF85E53180F939",
+          "state": "review-pending",
+          "group": null,
+          "reason": "2026-10-07 reviewed content repair: declare this repeatable PHB 2024 feat with the engine's allow duplicate metadata; preserve its ID, prerequisites, rules, and text."
+        },
+        {
+          "key": "repeatable-ID_WOTC_PHB24_FEAT_SKILLED_3",
+          "operation": "replace",
+          "targetId": "ID_WOTC_PHB24_FEAT_SKILLED_3",
+          "replacementId": null,
+          "originalFingerprint": "6BA85A93BBBFF4EF88642FCE3D44D07254604E340B64E6263B94B835FE8DEB3D",
+          "state": "review-pending",
+          "group": null,
+          "reason": "2026-10-07 reviewed content repair: declare this repeatable PHB 2024 feat with the engine's allow duplicate metadata; preserve its ID, prerequisites, rules, and text."
+        },
+        {
+          "key": "repeatable-ID_WOTC_PHB24_FEAT_SKILLED_4",
+          "operation": "replace",
+          "targetId": "ID_WOTC_PHB24_FEAT_SKILLED_4",
+          "replacementId": null,
+          "originalFingerprint": "BDB58A1B0E55C73564828BE44343F6887569EB4417FA8DA24587F7E395A06F75",
+          "state": "review-pending",
+          "group": null,
+          "reason": "2026-10-07 reviewed content repair: declare this repeatable PHB 2024 feat with the engine's allow duplicate metadata; preserve its ID, prerequisites, rules, and text."
+        },
+        {
+          "key": "repeatable-ID_WOTC_PHB24_FEAT_SKILLED_5",
+          "operation": "replace",
+          "targetId": "ID_WOTC_PHB24_FEAT_SKILLED_5",
+          "replacementId": null,
+          "originalFingerprint": "8E15BB9D33D30477B18286619C863AA50A4F136FB211E723BAF04DBCF2FDE26F",
+          "state": "review-pending",
+          "group": null,
+          "reason": "2026-10-07 reviewed content repair: declare this repeatable PHB 2024 feat with the engine's allow duplicate metadata; preserve its ID, prerequisites, rules, and text."
+        },
+        {
+          "key": "repeatable-ID_WOTC_PHB24_FEAT_SKILLED_6",
+          "operation": "replace",
+          "targetId": "ID_WOTC_PHB24_FEAT_SKILLED_6",
+          "replacementId": null,
+          "originalFingerprint": "3ED9FD4D046F8C197B65893E548A58E0C375C2CEA06E71DCBE1F77AD1750032B",
+          "state": "review-pending",
+          "group": null,
+          "reason": "2026-10-07 reviewed content repair: declare this repeatable PHB 2024 feat with the engine's allow duplicate metadata; preserve its ID, prerequisites, rules, and text."
+        },
+        {
+          "key": "repeatable-ID_WOTC_PHB24_FEAT_SKILLED_7",
+          "operation": "replace",
+          "targetId": "ID_WOTC_PHB24_FEAT_SKILLED_7",
+          "replacementId": null,
+          "originalFingerprint": "AF7B03C49C2E68AE01CB8693A453D303B3B4DAE0A3825DD6985B35837C295E99",
+          "state": "review-pending",
+          "group": null,
+          "reason": "2026-10-07 reviewed content repair: declare this repeatable PHB 2024 feat with the engine's allow duplicate metadata; preserve its ID, prerequisites, rules, and text."
+        },
+        {
+          "key": "repeatable-ID_WOTC_PHB24_FEAT_SKILLED_8",
+          "operation": "replace",
+          "targetId": "ID_WOTC_PHB24_FEAT_SKILLED_8",
+          "replacementId": null,
+          "originalFingerprint": "C6DE291A40CB2F968F001A8BBF5D08DFE5DEB9415342C410F9FAAD3C4B149358",
+          "state": "review-pending",
+          "group": null,
+          "reason": "2026-10-07 reviewed content repair: declare this repeatable PHB 2024 feat with the engine's allow duplicate metadata; preserve its ID, prerequisites, rules, and text."
+        },
+        {
+          "key": "repeatable-ID_WOTC_PHB24_FEAT_SKILLED_9",
+          "operation": "replace",
+          "targetId": "ID_WOTC_PHB24_FEAT_SKILLED_9",
+          "replacementId": null,
+          "originalFingerprint": "3E49723905CA5EDC4075CDD16DB59F36824C03A393B2E48F4AFCF946B5BCAE2F",
+          "state": "review-pending",
+          "group": null,
+          "reason": "2026-10-07 reviewed content repair: declare this repeatable PHB 2024 feat with the engine's allow duplicate metadata; preserve its ID, prerequisites, rules, and text."
         }
       ]
     }

@@ -20,7 +20,7 @@ The exact source hash limits each proposal to the reviewed source version. A mat
 
 ## Included corrections
 
-The catalog contains **13 proposals, 23 source-layout variants, and 49 correction records**. These include the ten broken grant/extraction references, duplicate item and feature identities, blank Devout feature grants, invalid equipment-pack price placeholders, and three item rarities with a one-letter typo.
+The catalog contains **15 proposals, 27 source-layout variants, and 66 correction records**. These include the ten broken grant/extraction references, duplicate item and feature identities, blank Devout feature grants, invalid equipment-pack price placeholders, three item rarities with a one-letter typo, and the missing repeatability metadata on the 2024 Ability Score Improvement and Skilled feats.
 
 | Proposal | Correction |
 | --- | --- |
@@ -37,6 +37,10 @@ The catalog contains **13 proposals, 23 source-layout variants, and 49 correctio
 | Stoneheart | Use the Xanathar's Erupting Earth definition. |
 | Mordenkainen's Tome rarities | Read "Vert Rare" as Very Rare (Crown of Leadership) and "Lgendary" as Legendary (Rattle of Death). |
 | Bestial Armor | Read "unommon" as Uncommon. |
+| 2024 Ability Score Improvement | Mark all eight existing definitions as repeatable; retain their IDs, prerequisites, and ability choices. |
+| 2024 Skilled | Mark all nine existing definitions as repeatable; retain their IDs, prerequisites, and skill/tool choices. |
+
+The repeatable-feat proposals place `allow duplicate=true` in the managed replacement definitions. They use the existing feat-selection support and do not depend on appending setters. They preserve the numbered variants used by existing characters. Their validation covers proposal application, effective content, and selection availability; editing and save/reload of repeated nested choices remain an application verification task.
 
 The retired Staff of Flowers correction and the optional Farmer background customization are excluded. Farmer's equipment pack is part of the general price-placeholder repair; that does not include the Farmer background customization.
 
