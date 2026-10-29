@@ -20,10 +20,11 @@ The exact source hash limits each proposal to the reviewed source version. A mat
 
 ## Included corrections
 
-The catalog contains **15 proposals, 27 source-layout variants, and 66 correction records**. These include the ten broken grant/extraction references, duplicate item and feature identities, blank Devout feature grants, invalid equipment-pack price placeholders, three item rarities with a one-letter typo, and the missing repeatability metadata on the 2024 Ability Score Improvement and Skilled feats.
+The catalog contains **16 proposals, 30 source-layout variants, and 67 correction records**. These include the ten broken grant/extraction references, duplicate item and feature identities, blank Devout feature grants, invalid equipment-pack price placeholders, three item rarities with a one-letter typo, and the missing repeatability metadata on the 2024 Ability Score Improvement and Skilled feats.
 
 | Proposal | Correction |
 | --- | --- |
+| Staff of Flowers (2024) | Give the revised 2024 version its own ID and correct its book attribution, preserving Xanathar’s version and all item rules. |
 | Walloping Ammunition | Separate its ID from Adamantine Ammunition. |
 | Forgotten Secrets items | Separate two item pairs that share IDs. |
 | Arcane Artillery | Keep the individual musketball and remove its duplicate pack declaration. |
@@ -42,7 +43,9 @@ The catalog contains **15 proposals, 27 source-layout variants, and 66 correctio
 
 The repeatable-feat proposals place `allow duplicate=true` in the managed replacement definitions. They use the existing feat-selection support and do not depend on appending setters. They preserve the numbered variants used by existing characters. Their validation covers proposal application, effective content, and selection availability; editing and save/reload of repeated nested choices remain an application verification task.
 
-The retired Staff of Flowers correction and the optional Farmer background customization are excluded. Farmer's equipment pack is part of the general price-placeholder repair; that does not include the Farmer background customization.
+The Staff of Flowers proposal targets the current publisher file and supports direct `core`, `AuroraLegacy/core`, and `aurora-sources/AuroraLegacy/core` layouts. It repairs the conflicting 2024 declaration while preserving the Xanathar identity and references.
+
+The optional Farmer background customization is excluded. Farmer's equipment pack is part of the general price-placeholder repair; that does not include the Farmer background customization.
 
 Full correction reasons, authoritative source paths, upstream URLs, and hashes are recorded in [catalog.json](catalog.json). The escaped managed payload retains the original source information, complete baseline, and correction provenance.
 

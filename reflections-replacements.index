@@ -3,7 +3,7 @@
   <info>
     <name>Reflections Replacements</name>
     <description>Reviewed correction proposals; downloading never applies them.</description>
-    <update version="1.2.0">
+    <update version="1.3.0">
       <file name="reflections-replacements.index" url="https://raw.githubusercontent.com/Xellarant/Reflections-Replacements/master/reflections-replacements.index" />
     </update>
   </info>
@@ -23,5 +23,6 @@
     <file name="lost-vaults-bestial-armor-rarity.aurora-correction" url="https://raw.githubusercontent.com/Xellarant/Reflections-Replacements/master/reflections-replacements/lost-vaults-bestial-armor-rarity.aurora-correction" />
     <file name="phb24-asi-repeatability.aurora-correction" url="https://raw.githubusercontent.com/Xellarant/Reflections-Replacements/master/reflections-replacements/phb24-asi-repeatability.aurora-correction" />
     <file name="phb24-skilled-repeatability.aurora-correction" url="https://raw.githubusercontent.com/Xellarant/Reflections-Replacements/master/reflections-replacements/phb24-skilled-repeatability.aurora-correction" />
+    <file name="dmg24-staff-of-flowers.aurora-correction" url="https://raw.githubusercontent.com/Xellarant/Reflections-Replacements/master/reflections-replacements/dmg24-staff-of-flowers.aurora-correction" />
   </files>
 </index>

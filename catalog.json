@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "1.2.0",
+  "version": "1.3.0",
   "entries": [
     {
       "id": "dmg24-walloping-ammunition",
@@ -1198,6 +1198,55 @@
           "state": "review-pending",
           "group": null,
           "reason": "2026-10-07 reviewed content repair: declare this repeatable PHB 2024 feat with the engine's allow duplicate metadata; preserve its ID, prerequisites, rules, and text."
+        }
+      ]
+    },
+    {
+      "id": "dmg24-staff-of-flowers",
+      "revision": "1.0.0",
+      "title": "Staff of Flowers (2024) identity",
+      "summary": "Resolve the duplicate with Xanathar’s Staff of Flowers by giving the 2024 version its own ID and correcting its book attribution. Preserve both versions and their rules.",
+      "rationale": "The current DMG 2024 file reuses the Xanathar ID and source despite revised action wording, cost and item modeling. Rename only the fingerprint-matched 2024 declaration and correct its attribution; retain the original Xanathar identity, references and gameplay text.",
+      "requires": [],
+      "variants": [
+        {
+          "sourcePath": "core/dungeon-masters-guide-2024/items-staffs.xml",
+          "sourceSha256": "2A06033B8E5833887A3F9C3B6DBB2BD4913750D54B56FB3553218F99C8938DD0",
+          "payloadSha256": "D7BAD17EB808EA38568FE950888A0129F1F89CB0B693358BC8B2B56A6CB8FF72",
+          "upstreamUrl": "https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide-2024/items/items-staffs.xml",
+          "correctionKeys": [
+            "rename-ID_WOTC_DMG24_MAGIC_ITEM_STAFF_OF_FLOWERS"
+          ]
+        },
+        {
+          "sourcePath": "AuroraLegacy/core/dungeon-masters-guide-2024/items-staffs.xml",
+          "sourceSha256": "2A06033B8E5833887A3F9C3B6DBB2BD4913750D54B56FB3553218F99C8938DD0",
+          "payloadSha256": "AA18FF44CB17956ED2A8B4E69F575982736C0AEE3F3E196171D2C57BCF96DE10",
+          "upstreamUrl": "https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide-2024/items/items-staffs.xml",
+          "correctionKeys": [
+            "rename-ID_WOTC_DMG24_MAGIC_ITEM_STAFF_OF_FLOWERS"
+          ]
+        },
+        {
+          "sourcePath": "aurora-sources/AuroraLegacy/core/dungeon-masters-guide-2024/items-staffs.xml",
+          "sourceSha256": "2A06033B8E5833887A3F9C3B6DBB2BD4913750D54B56FB3553218F99C8938DD0",
+          "payloadSha256": "C429D3FAC125BF76603D4B27711307464C86439D8421E64815959AFD043C46A2",
+          "upstreamUrl": "https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide-2024/items/items-staffs.xml",
+          "correctionKeys": [
+            "rename-ID_WOTC_DMG24_MAGIC_ITEM_STAFF_OF_FLOWERS"
+          ]
+        }
+      ],
+      "corrections": [
+        {
+          "key": "rename-ID_WOTC_DMG24_MAGIC_ITEM_STAFF_OF_FLOWERS",
+          "operation": "rename",
+          "targetId": "ID_WOTC_XGTE_MAGIC_ITEM_STAFF_OF_FLOWERS",
+          "replacementId": "ID_WOTC_DMG24_MAGIC_ITEM_STAFF_OF_FLOWERS",
+          "originalFingerprint": "A24DBD760C0B94784CC0E9F9CE2058AC4E43DE61AF9EB3DC237944561F2A03C3",
+          "state": "review-pending",
+          "group": null,
+          "reason": "2026-10-29 reviewed repair: give the revised DMG 2024 Staff of Flowers its own identity and book attribution; preserve the Xanathar definition and references."
         }
       ]
     }
